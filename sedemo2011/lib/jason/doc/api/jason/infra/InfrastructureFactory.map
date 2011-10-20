@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="c33986" href="./InfrastructureFactory.html" title="jason.infra.InfrastructureFactory" alt="" coords="219,11,442,63"/>
+<area shape="rect" id="c33994" href="./centralised/CentralisedFactory.html" title="jason.infra.centralised.CentralisedFactory" alt="" coords="16,123,216,167"/>
+<area shape="rect" id="c34002" href="./jade/JadeFactory.html" title="jason.infra.jade.JadeFactory" alt="" coords="261,123,400,167"/>
+<area shape="rect" id="c34010" href="./saci/SaciFactory.html" title="jason.infra.saci.SaciFactory" alt="" coords="445,123,579,167"/>
+</map>

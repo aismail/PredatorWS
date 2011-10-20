@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="c26598" href="./ExecutionControlInfraTier.html" title="jason.control.ExecutionControlInfraTier" alt="" coords="332,11,596,63"/>
+<area shape="rect" id="c26637" href="../infra/centralised/CentralisedExecutionControl.html" title="jason.infra.centralised.CentralisedExecutionControl" alt="" coords="15,123,305,167"/>
+<area shape="rect" id="c26645" href="../infra/jade/JadeExecutionControl.html" title="jason.infra.jade.JadeExecutionControl" alt="" coords="349,123,579,167"/>
+<area shape="rect" id="c26653" href="../infra/saci/SaciExecutionControl.html" title="jason.infra.saci.SaciExecutionControl" alt="" coords="623,123,846,167"/>
+</map>

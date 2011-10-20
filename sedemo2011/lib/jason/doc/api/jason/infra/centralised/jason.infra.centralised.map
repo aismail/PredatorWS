@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="c3058" href="./StartNewAgentGUI.html" title="jason.infra.centralised.StartNewAgentGUI" alt="" coords="16,126,213,157"/>
+<area shape="rect" id="c3059" href="./RunCentralisedMAS.html" title="jason.infra.centralised.RunCentralisedMAS" alt="" coords="341,22,545,53"/>
+<area shape="rect" id="c3060" href="./MsgListener.html" title="jason.infra.centralised.MsgListener" alt="" coords="589,11,723,63"/>
+<area shape="rect" id="c3061" href="./KillAgentGUI.html" title="jason.infra.centralised.KillAgentGUI" alt="" coords="259,126,397,157"/>
+<area shape="rect" id="c3062" href="./CreateJNLP.html" title="jason.infra.centralised.CreateJNLP" alt="" coords="768,22,901,53"/>
+<area shape="rect" id="c3063" href="./CentralisedRuntimeServices.html" title="jason.infra.centralised.CentralisedRuntimeServices" alt="" coords="947,22,1229,53"/>
+<area shape="rect" id="c3064" href="./CentralisedMASLauncherAnt.html" title="jason.infra.centralised.CentralisedMASLauncherAnt" alt="" coords="1275,22,1560,53"/>
+<area shape="rect" id="c3065" href="./CentralisedFactory.html" title="jason.infra.centralised.CentralisedFactory" alt="" coords="1605,22,1805,53"/>
+<area shape="rect" id="c3066" href="./CentralisedExecutionControl.html" title="jason.infra.centralised.CentralisedExecutionControl" alt="" coords="1850,22,2139,53"/>
+<area shape="rect" id="c3067" href="./CentralisedEnvironment.html" title="jason.infra.centralised.CentralisedEnvironment" alt="" coords="2184,22,2429,53"/>
+<area shape="rect" id="c3068" href="./CentralisedAgArch.html" title="jason.infra.centralised.CentralisedAgArch" alt="" coords="2475,22,2672,53"/>
+<area shape="rect" id="c3069" href="./BaseDialogGUI.html" title="jason.infra.centralised.BaseDialogGUI" alt="" coords="147,22,296,53"/>
+</map>

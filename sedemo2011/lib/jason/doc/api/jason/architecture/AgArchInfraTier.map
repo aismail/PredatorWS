@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="c5907" href="./AgArchInfraTier.html" title="jason.architecture.AgArchInfraTier" alt="" coords="241,11,412,63"/>
+<area shape="rect" id="c6032" href="../infra/centralised/CentralisedAgArch.html" title="jason.infra.centralised.CentralisedAgArch" alt="" coords="16,123,213,167"/>
+<area shape="rect" id="c6040" href="../infra/jade/JadeAgArch.html" title="jason.infra.jade.JadeAgArch" alt="" coords="259,123,395,167"/>
+<area shape="rect" id="c6048" href="../infra/saci/SaciAgArch.html" title="jason.infra.saci.SaciAgArch" alt="" coords="439,123,569,167"/>
+</map>

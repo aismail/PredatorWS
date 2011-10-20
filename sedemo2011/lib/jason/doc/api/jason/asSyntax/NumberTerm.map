@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="c16976" href="./VarTerm.html" title="jason.asSyntax.VarTerm" alt="" coords="35,129,138,159"/>
+<area shape="rect" id="c16981" href="./Term.html" title="jason.asSyntax.Term" alt="" coords="64,238,192,290"/>
+<area shape="rect" id="c16999" href="./NumberTerm.html" title="jason.asSyntax.NumberTerm" alt="" coords="108,11,251,63"/>
+<area shape="rect" id="c16998" href="./NumberTermImpl.html" title="jason.asSyntax.NumberTermImpl" alt="" coords="182,129,364,159"/>
+<area shape="rect" id="c17013" href="./ArithFunctionTerm.html" title="jason.asSyntax.ArithFunctionTerm" alt="" coords="409,129,606,159"/>
+</map>

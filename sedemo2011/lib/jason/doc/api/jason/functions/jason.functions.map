@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="c2549" href="./time.html" title="jason.functions.time" alt="" coords="16,14,80,45"/>
+<area shape="rect" id="c2550" href="./pi.html" title="jason.functions.pi" alt="" coords="131,14,170,45"/>
+<area shape="rect" id="c2551" href="./log.html" title="jason.functions.log" alt="" coords="221,14,273,45"/>
+<area shape="rect" id="c2552" href="./floor.html" title="jason.functions.floor" alt="" coords="317,14,385,45"/>
+<area shape="rect" id="c2553" href="./e.html" title="jason.functions.e" alt="" coords="438,14,471,45"/>
+<area shape="rect" id="c2554" href="./ceil.html" title="jason.functions.ceil" alt="" coords="525,14,579,45"/>
+<area shape="rect" id="c2555" href="./Sum.html" title="jason.functions.Sum" alt="" coords="623,14,686,45"/>
+<area shape="rect" id="c2556" href="./StdDev.html" title="jason.functions.StdDev" alt="" coords="730,14,819,45"/>
+<area shape="rect" id="c2557" href="./Sqrt.html" title="jason.functions.Sqrt" alt="" coords="863,14,926,45"/>
+<area shape="rect" id="c2558" href="./RuleToFunction.html" title="jason.functions.RuleToFunction" alt="" coords="971,14,1139,45"/>
+<area shape="rect" id="c2559" href="./Round.html" title="jason.functions.Round" alt="" coords="1183,14,1265,45"/>
+<area shape="rect" id="c2560" href="./Random.html" title="jason.functions.Random" alt="" coords="1309,14,1408,45"/>
+<area shape="rect" id="c2561" href="./Min.html" title="jason.functions.Min" alt="" coords="1453,14,1507,45"/>
+<area shape="rect" id="c2562" href="./Max.html" title="jason.functions.Max" alt="" coords="1552,14,1611,45"/>
+<area shape="rect" id="c2563" href="./Length.html" title="jason.functions.Length" alt="" coords="1655,14,1742,45"/>
+<area shape="rect" id="c2564" href="./Count.html" title="jason.functions.Count" alt="" coords="1786,14,1865,45"/>
+<area shape="rect" id="c2565" href="./Average.html" title="jason.functions.Average" alt="" coords="1909,14,2008,45"/>
+<area shape="rect" id="c2566" href="./Abs.html" title="jason.functions.Abs" alt="" coords="2053,14,2110,45"/>
+</map>

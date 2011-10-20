@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="c41837" href="../infra/centralised/StartNewAgentGUI.html" title="jason.infra.centralised.StartNewAgentGUI" alt="" coords="237,11,435,55"/>
+<area shape="rect" id="c41868" href="./NewAgentGUI.html" title="jason.jeditplugin.NewAgentGUI" alt="" coords="261,118,411,149"/>
+<area shape="rect" id="c41865" href="./NewProjectGUI.html" title="jason.jeditplugin.NewProjectGUI" alt="" coords="16,214,179,245"/>
+<area shape="rect" id="c41866" href="./NewInternalActionGUI.html" title="jason.jeditplugin.NewInternalActionGUI" alt="" coords="223,214,449,245"/>
+<area shape="rect" id="c41867" href="./NewEnvironmentGUI.html" title="jason.jeditplugin.NewEnvironmentGUI" alt="" coords="493,214,704,245"/>
+</map>

@@ -1,0 +1,90 @@
+commit 49ede7b30a8337b25605a8b5f819d353945ca492
+Author: Andrei-Adnan Ismail <iandrei@gmail.com>
+Date:   Mon May 16 13:30:57 2011 +0300
+
+    Patching in order to compile to stand-alone binary executable.
+
+diff --git a/initcamera.m b/initcamera.m
+index 31f022a..a920084 100644
+--- a/initcamera.m
++++ b/initcamera.m
+@@ -23,7 +23,7 @@
+ 
+ %source.vid = videoinput('winvideo', 1);
+ %source.vid = videoinput('winvideo', 1,'RGB24_320x240');
+-source.vid = videoinput('winvideo', 1,'YUY2_320x240');
++source.vid = videoinput('linuxvideo', 1);
+ 
+ set(source.vid,'ReturnedColorSpace','grayscale');
+ vidRes = get(source.vid, 'VideoResolution');
+diff --git a/other/init_workspace.m b/other/init_workspace.m
+index e082f34..b2e12df 100644
+--- a/other/init_workspace.m
++++ b/other/init_workspace.m
+@@ -23,5 +23,7 @@ warning off all;
+ rand('state',0);
+ randn('state',0);
+ close all;
++if (~isdeployed)
+ addpath(genpath('.'));
+-tic;
+\ No newline at end of file
++end
++tic;
+diff --git a/run_TLD.m b/run_TLD.m
+index 924e995..d47a2de 100644
+--- a/run_TLD.m
++++ b/run_TLD.m
+@@ -15,9 +15,11 @@
+ % You should have received a copy of the GNU General Public License
+ % along with TLD.  If not, see <http://www.gnu.org/licenses/>.
+ 
+-addpath(genpath('.')); init_workspace; 
++if (~isdeployed)
++addpath(genpath('.')); init_workspace;
++end
+ 
+-opt.source          = struct('camera',0,'input','_input/','bb0',[]); % camera/directory swith, directory_name, initial_bounding_box (if empty, it will be selected by the user)
++opt.source          = struct('camera',1,'input','_input/','bb0',[]); % camera/directory swith, directory_name, initial_bounding_box (if empty, it will be selected by the user)
+ opt.output          = '_output/'; mkdir(opt.output); % output directory that will contain bounding boxes + confidence
+ 
+ min_win             = 24; % minimal size of the object's bounding box in the scanning grid, it may significantly influence speed of TLD, set it to minimal size of the object
+@@ -45,4 +47,4 @@ opt.control         = struct('maxbbox',maxbbox,'update_detector',update_detector
+ 
+ % Save results ------------------------------------------------------------
+ dlmwrite([opt.output '/tld.txt'],[bb; conf]');
+-disp('Results saved to ./_output.');
+\ No newline at end of file
++disp('Results saved to ./_output.');
+diff --git a/test/test_webcam.m b/test/test_webcam.m
+index 76e123c..a71de26 100644
+--- a/test/test_webcam.m
++++ b/test/test_webcam.m
+@@ -1,4 +1,4 @@
+-obj    = videoinput('winvideo', 1, 'RGB24_320x240'); 
++obj = videoinput('linuxvideo', 1);
+ 
+ vidRes = get(obj, 'VideoResolution'); 
+ nBands = get(obj, 'NumberOfBands'); 
+diff --git a/tld/tldDisplay.m b/tld/tldDisplay.m
+index b6de384..5802264 100644
+--- a/tld/tldDisplay.m
++++ b/tld/tldDisplay.m
+@@ -137,8 +137,8 @@ else
+     % Info
+     
+     %string = ['#' num2str(i) ', fps:' num2str(1/toc,2) ', ' num2str(tld.control.maxbbox) '/' num2str(tld.nGrid) ', Fern: ' num2str(tld.model.thr_fern,4) ', NN: ' num2str(tld.model.thr_nn,3) '/' num2str(tld.model.thr_nn_valid,3)];
+-    string = ['#' num2str(i) ', fps:' num2str(1/toc,3) ', ' num2str(tld.control.maxbbox) '/' num2str(tld.nGrid)];
+-    text(10,H-10,string,'color','white','backgroundcolor','k');
++    %string = ['#' num2str(i) ', fps:' num2str(1/toc,3) ', ' num2str(tld.control.maxbbox) '/' num2str(tld.nGrid)];
++    %text(10,H-10,string,'color','white','backgroundcolor','k');
+     %if tld.control.update_detector
+     %    text(10,H-30,'Learning','color','white','backgroundcolor','k');
+     %end
+@@ -217,4 +217,4 @@ nex = uint8(imresize(255*nex,Rescale));
+ [pH,pW] = size(nex);
+ img(1:pH,1:pW)= nex;
+ 
+-end
+\ No newline at end of file
++end

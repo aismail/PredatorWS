@@ -1,0 +1,10 @@
+MAS jason_Processing {
+
+	infrastructure: Centralised
+	
+	environment: c4jason.CartagoEnvironment
+    
+    agents:
+        guardian [verbose=0]
+        	agentArchClass c4jason.CAgentArch;
+}

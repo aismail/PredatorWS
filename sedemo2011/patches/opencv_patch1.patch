@@ -1,0 +1,122 @@
+diff --git lib/src/hypermedia/java/hypermedia/video/OpenCV.java lib/src/hypermedia/java/hypermedia/video/OpenCV.java
+index 0ecd9c9..77c3b9a 100644
+--- lib/src/hypermedia/java/hypermedia/video/OpenCV.java
++++ lib/src/hypermedia/java/hypermedia/video/OpenCV.java
+@@ -710,6 +710,9 @@ public class OpenCV {
+ 	 */
+ 	public native int[] pixels( int type );
+ 	public int[] pixels() { return pixels( BUFFER ); }
++
++    public native int[] RGBpixels( int type );
++	public int[] RGBpixels() { return RGBpixels( BUFFER ); }
+ 	
+ 	
+ 	
+diff --git lib/src/hypermedia/native/CvJNILib.cpp lib/src/hypermedia/native/CvJNILib.cpp
+index 5b9290d..24ffef0 100644
+--- lib/src/hypermedia/native/CvJNILib.cpp
++++ lib/src/hypermedia/native/CvJNILib.cpp
+@@ -154,6 +154,15 @@ JNIEXPORT jintArray JNICALL Java_hypermedia_video_OpenCV_pixels
+ 	return instances[ key ]->pixels( env, obj, (int)type );
+ }
+ 
++// method : RGBpixels
++JNIEXPORT jintArray JNICALL Java_hypermedia_video_OpenCV_RGBpixels
++( JNIEnv * env, jobject obj, jint type )
++{	
++	string key = javaObjectInstance( env, obj );
++	return instances[ key ]->RGBpixels( env, obj, (int)type );
++}
++
++
+ // method : copy
+ JNIEXPORT void JNICALL Java_hypermedia_video_OpenCV_copy__Lhypermedia_video_OpenCV_2II
+ ( JNIEnv * env, jobject obj, jobject source, jint srctype, jint desttype )
+diff --git lib/src/hypermedia/native/CvObj.cpp lib/src/hypermedia/native/CvObj.cpp
+index d44ec27..57a23b9 100644
+--- lib/src/hypermedia/native/CvObj.cpp
++++ lib/src/hypermedia/native/CvObj.cpp
+@@ -135,6 +135,51 @@ jintArray CvObj::pixels( JNIEnv * jenv, jobject jobj, int kind )
+ 	
+ }
+ 
++jintArray CvObj::RGBpixels( JNIEnv * jenv, jobject jobj, int kind )
++{
++	// GetImageROI
++	
++	jintArray jpixels;
++	int size = width*height;
++	jpixels  = jenv->NewIntArray(size*3);
++	jint data[3];
++	
++	// nothing to fix
++	if ( kind==SOURCE && source==NULL ) return jpixels;
++	if ( kind==BUFFER && buffer==NULL ) return jpixels;
++	if ( kind==MEMORY && memory==NULL ) return jpixels;
++	
++	
++	IplImage * src;
++	switch( kind ) {
++		case MEMORY	: src = cvCloneImage(memory); break;
++		case SOURCE	: src = cvCloneImage(source); break;
++		default		: src = cvCloneImage(buffer); break;
++	}
++	
++	
++	for( int i=0; i<size; i++ ) {
++		
++		int x = i%width;
++		int y = i/width;
++		int p = ( x*src->nChannels ) + ( y*src->widthStep );
++		
++		unsigned char b = src->imageData[ p ];
++		unsigned char g = src->nChannels==1 ? b : src->imageData[ p+1 ];
++		unsigned char r = src->nChannels==1 ? b : src->imageData[ p+2 ];
++		
++		data[0] = r;
++		data[1] = g;
++		data[2] = b;
++		jenv->SetIntArrayRegion( jpixels, 3*i, 3, data );
++	}
++	
++	cvReleaseImage( &src );
++	
++	return jpixels;
++	
++}
++
+ 
+ /**
+  * Store the specified image in memory and flip to the specified axis if necessary.
+diff --git lib/src/hypermedia/native/CvObj.h lib/src/hypermedia/native/CvObj.h
+index 60ddb76..72743fd 100644
+--- lib/src/hypermedia/native/CvObj.h
++++ lib/src/hypermedia/native/CvObj.h
+@@ -40,6 +40,7 @@ public :
+ 	void deallocate( int type=-1 );
+ 	
+ 	jintArray pixels( JNIEnv * jenv, jobject jobj, int kind );
++	jintArray RGBpixels( JNIEnv * jenv, jobject jobj, int kind );
+ 	
+ 	// --
+ 	
+diff --git lib/src/hypermedia/native/hypermedia_video_OpenCV.h lib/src/hypermedia/native/hypermedia_video_OpenCV.h
+index d4b8dff..d6f9f92 100644
+--- lib/src/hypermedia/native/hypermedia_video_OpenCV.h
++++ lib/src/hypermedia/native/hypermedia_video_OpenCV.h
+@@ -229,6 +229,15 @@ JNIEXPORT jintArray JNICALL Java_hypermedia_video_OpenCV_pixels
+ 
+ /*
+  * Class:     hypermedia_video_OpenCV
++ * Method:    pixels
++ * Signature: (I)[I
++ */
++JNIEXPORT jintArray JNICALL Java_hypermedia_video_OpenCV_RGBpixels
++  (JNIEnv *, jobject, jint);
++
++
++/*
++ * Class:     hypermedia_video_OpenCV
+  * Method:    loadImage
+  * Signature: (Ljava/lang/String;II)V
+  */

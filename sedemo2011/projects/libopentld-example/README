@@ -1,0 +1,8 @@
+How to run this example:
+
+0) Go to the "../libopentld" folder and perform "make". Grab a coffee, it takes 5-10 minutes.
+1) Come back to this folder and run "make run"
+1) Place yourself in front of the webcam at a reproducible position
+2) Stop the demo using ESC, and take the coordinates of your face from "temp/frame.png"
+4) Fill them in using the format x1,y1,x2,y2 in the file temp/init.txt, where (x1,y1) = position of upper left corner and (x2,y2) = position of lower right corner
+5) Start the demo again and enjoy

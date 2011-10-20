@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="c3820" href="./RunProjectListener.html" title="jason.jeditplugin.RunProjectListener" alt="" coords="15,11,217,63"/>
+<area shape="rect" id="c3830" href="./JasonID.html" title="jason.jeditplugin.JasonID" alt="" coords="68,126,164,157"/>
+<area shape="rect" id="c3821" href="./NewProjectGUI.html" title="jason.jeditplugin.NewProjectGUI" alt="" coords="209,126,372,157"/>
+<area shape="rect" id="c3822" href="./NewInternalActionGUI.html" title="jason.jeditplugin.NewInternalActionGUI" alt="" coords="417,126,642,157"/>
+<area shape="rect" id="c3823" href="./NewEnvironmentGUI.html" title="jason.jeditplugin.NewEnvironmentGUI" alt="" coords="687,126,897,157"/>
+<area shape="rect" id="c3824" href="./NewAgentGUI.html" title="jason.jeditplugin.NewAgentGUI" alt="" coords="455,22,604,53"/>
+<area shape="rect" id="c3825" href="./MASLauncherInfraTier.html" title="jason.jeditplugin.MASLauncherInfraTier" alt="" coords="649,11,877,63"/>
+<area shape="rect" id="c3826" href="./JasonProjectSideKickParser.html" title="jason.jeditplugin.JasonProjectSideKickParser" alt="" coords="921,22,1207,53"/>
+<area shape="rect" id="c3827" href="./JasonProjectImporter.html" title="jason.jeditplugin.JasonProjectImporter" alt="" coords="1251,22,1477,53"/>
+<area shape="rect" id="c3828" href="./JasonIDPlugin.html" title="jason.jeditplugin.JasonIDPlugin" alt="" coords="1521,22,1673,53"/>
+<area shape="rect" id="c3829" href="./JasonIDOptionPanel.html" title="jason.jeditplugin.JasonIDOptionPanel" alt="" coords="1718,22,1925,53"/>
+<area shape="rect" id="c3831" href="./Config.html" title="jason.jeditplugin.Config" alt="" coords="1969,22,2055,53"/>
+<area shape="rect" id="c3832" href="./CheckVersion.html" title="jason.jeditplugin.CheckVersion" alt="" coords="2100,22,2249,53"/>
+<area shape="rect" id="c3833" href="./AgentSpeakSideKickParser.html" title="jason.jeditplugin.AgentSpeakSideKickParser" alt="" coords="2295,22,2567,53"/>
+<area shape="rect" id="c3834" href="./AboutGUI.html" title="jason.jeditplugin.AboutGUI" alt="" coords="2611,22,2722,53"/>
+</map>
