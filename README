@@ -1,1 +1,6 @@
 The Predator WebService
+
+* sedemo2011 is the demo for Saint Etienne visit 2011. This contains the following:
+ * user face detection using OpenCV Haar features
+ * user face identification using face.com webservice
+ * user face tracking using the Predator algorithm
