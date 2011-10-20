@@ -4,4 +4,3 @@ The Predator WebService
  * user face detection using OpenCV Haar features
  * user face identification using face.com webservice
  * user face tracking using the Predator algorithm
-* test
