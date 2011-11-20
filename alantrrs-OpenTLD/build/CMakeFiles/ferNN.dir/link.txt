@@ -1,2 +1,0 @@
-/usr/bin/ar cr /Users/andra/Desktop/alantrrs-OpenTLD-4d301ad/lib/libferNN.a  CMakeFiles/ferNN.dir/FerNNClassifier.o
-/usr/bin/ranlib /Users/andra/Desktop/alantrrs-OpenTLD-4d301ad/lib/libferNN.a

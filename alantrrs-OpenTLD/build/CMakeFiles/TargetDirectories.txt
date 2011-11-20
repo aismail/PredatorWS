@@ -1,5 +1,0 @@
-/Users/andra/Desktop/alantrrs-OpenTLD-4d301ad/build/CMakeFiles/LKTracker.dir
-/Users/andra/Desktop/alantrrs-OpenTLD-4d301ad/build/CMakeFiles/ferNN.dir
-/Users/andra/Desktop/alantrrs-OpenTLD-4d301ad/build/CMakeFiles/run_tld.dir
-/Users/andra/Desktop/alantrrs-OpenTLD-4d301ad/build/CMakeFiles/tld.dir
-/Users/andra/Desktop/alantrrs-OpenTLD-4d301ad/build/CMakeFiles/tld_utils.dir

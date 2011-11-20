@@ -2,10 +2,15 @@ This will be a C++ implementations of the OpenTLD (aka Predator)
 ----------------------------------------------------------------------------
 This is a work in progress, as of right now the code is functional but pretty slow.
 ----------------------------------------------------------------------------
+
+Prerequisites
+====================================
+* install OpenCV from http://opencv.willowgarage.com/wiki/
+
 Installation Notes
 =====================================
-git clone git@github.com:alantrrs/OpenTLD.git
-cd OpenTLD
+git clone git@github.com:aismail/PredatorWS.git
+cd alantrrs-OpenTLD
 mkdir build
 cd build
 cmake ../src/
