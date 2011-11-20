@@ -1,0 +1,2 @@
+/usr/bin/ar cr /Users/andra/Desktop/alantrrs-OpenTLD-4d301ad/lib/libtld.a  CMakeFiles/tld.dir/TLD.o
+/usr/bin/ranlib /Users/andra/Desktop/alantrrs-OpenTLD-4d301ad/lib/libtld.a
