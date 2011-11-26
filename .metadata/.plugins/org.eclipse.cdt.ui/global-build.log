@@ -1,0 +1,1395 @@
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/gnebehay.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gnebehay.d" -MT"src/gnebehay.d" -o "src/gnebehay.o" "../src/gnebehay.cpp"
+Finished building: ../src/gnebehay.cpp
+ 
+Building target: gnebehay
+Invoking: MacOS X C++ Linker
+g++  -o "gnebehay"  ./src/gnebehay.o   
+Finished building target: gnebehay
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project gnebehay ****
+
+make clean 
+rm -rf  ./src/gnebehay.o  ./src/gnebehay.d  gnebehay
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/gnebehay.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gnebehay.d" -MT"src/gnebehay.d" -o "src/gnebehay.o" "../src/gnebehay.cpp"
+Finished building: ../src/gnebehay.cpp
+ 
+Building target: gnebehay
+Invoking: MacOS X C++ Linker
+g++  -o "gnebehay"  ./src/gnebehay.o   
+Finished building target: gnebehay
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/gnebehay.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gnebehay.d" -MT"src/gnebehay.d" -o "src/gnebehay.o" "../src/gnebehay.cpp"
+Finished building: ../src/gnebehay.cpp
+ 
+Building target: gnebehay
+Invoking: MacOS X C++ Linker
+g++  -o "gnebehay"  ./src/gnebehay.o   
+Finished building target: gnebehay
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/tld/tracker/bb.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb.d" -MT"src/tld/tracker/bb.d" -o "src/tld/tracker/bb.o" "../src/tld/tracker/bb.cpp"
+Finished building: ../src/tld/tracker/bb.cpp
+ 
+Building file: ../src/tld/tracker/bb_predict.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb_predict.d" -MT"src/tld/tracker/bb_predict.d" -o "src/tld/tracker/bb_predict.o" "../src/tld/tracker/bb_predict.cpp"
+Finished building: ../src/tld/tracker/bb_predict.cpp
+ 
+Building file: ../src/tld/tracker/fbtrack.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/fbtrack.d" -MT"src/tld/tracker/fbtrack.d" -o "src/tld/tracker/fbtrack.o" "../src/tld/tracker/fbtrack.cpp"
+Finished building: ../src/tld/tracker/fbtrack.cpp
+ 
+Building file: ../src/tld/tracker/lk.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/lk.d" -MT"src/tld/tracker/lk.d" -o "src/tld/tracker/lk.o" "../src/tld/tracker/lk.cpp"
+Finished building: ../src/tld/tracker/lk.cpp
+ 
+Building file: ../src/tld/tracker/median.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/median.d" -MT"src/tld/tracker/median.d" -o "src/tld/tracker/median.o" "../src/tld/tracker/median.cpp"
+Finished building: ../src/tld/tracker/median.cpp
+ 
+Building file: ../src/tld/Clustering.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/Clustering.d" -MT"src/tld/Clustering.d" -o "src/tld/Clustering.o" "../src/tld/Clustering.cpp"
+In file included from ../src/tld/Clustering.cpp:26:
+../src/tld/Clustering.h:30:16: warning: cv.h: No such file or directory
+In file included from ../src/tld/Clustering.h:32,
+                 from ../src/tld/Clustering.cpp:26:
+../src/tld/DetectionResult.h:33: error: 'cv' is not a namespace-name
+../src/tld/DetectionResult.h:33: error: expected namespace-name before ';' token
+../src/tld/DetectionResult.h:40: error: 'Rect' was not declared in this scope
+../src/tld/DetectionResult.h:40: error: template argument 1 is invalid
+../src/tld/DetectionResult.h:40: error: template argument 2 is invalid
+../src/tld/DetectionResult.h:46: error: ISO C++ forbids declaration of 'Rect' with no type
+../src/tld/DetectionResult.h:46: error: expected ';' before '*' token
+In file included from ../src/tld/Clustering.cpp:26:
+../src/tld/Clustering.h:35: error: 'cv' is not a namespace-name
+../src/tld/Clustering.h:35: error: expected namespace-name before ';' token
+In file included from ../src/tld/Clustering.cpp:27:
+../src/tld/TLDUtil.h:32: error: 'cv' is not a namespace-name
+../src/tld/TLDUtil.h:32: error: expected namespace-name before ';' token
+../src/tld/TLDUtil.h:69: error: variable or field 'tldRectToArray' declared void
+../src/tld/TLDUtil.h:69: error: 'Rect' was not declared in this scope
+../src/tld/TLDUtil.h:69: error: expected primary-expression before '*' token
+../src/tld/TLDUtil.h:69: error: 'boundary' was not declared in this scope
+../src/tld/TLDUtil.h:77: error: expected constructor, destructor, or type conversion before 'tldArrayToRect'
+../src/tld/TLDUtil.h:89: error: variable or field 'tldRectToPoints' declared void
+../src/tld/TLDUtil.h:89: error: 'CvRect' was not declared in this scope
+../src/tld/TLDUtil.h:89: error: 'CvPoint' was not declared in this scope
+../src/tld/TLDUtil.h:89: error: 'p1' was not declared in this scope
+../src/tld/TLDUtil.h:89: error: 'CvPoint' was not declared in this scope
+../src/tld/TLDUtil.h:89: error: 'p2' was not declared in this scope
+../src/tld/TLDUtil.h:90: error: 'CvPoint' has not been declared
+../src/tld/TLDUtil.h:90: error: 'CvPoint' has not been declared
+../src/tld/TLDUtil.h:92: error: variable or field 'tldNormalizeImg' declared void
+../src/tld/TLDUtil.h:92: error: 'IplImage' was not declared in this scope
+../src/tld/TLDUtil.h:92: error: 'img' was not declared in this scope
+../src/tld/TLDUtil.h:92: error: expected primary-expression before 'float'
+../src/tld/TLDUtil.h:92: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: variable or field 'tldExtractNormalizedPatch' declared void
+../src/tld/TLDUtil.h:94: error: 'Mat' was not declared in this scope
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'float'
+../src/tld/TLDUtil.h:95: error: variable or field 'tldExtractNormalizedPatchBB' declared void
+../src/tld/TLDUtil.h:95: error: 'Mat' was not declared in this scope
+../src/tld/TLDUtil.h:95: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:95: error: expected primary-expression before 'float'
+../src/tld/TLDUtil.h:96: error: variable or field 'tldExtractNormalizedPatchRect' declared void
+../src/tld/TLDUtil.h:96: error: 'Mat' was not declared in this scope
+../src/tld/TLDUtil.h:96: error: 'Rect' was not declared in this scope
+../src/tld/TLDUtil.h:96: error: 'rect' was not declared in this scope
+../src/tld/TLDUtil.h:96: error: expected primary-expression before 'float'
+../src/tld/TLDUtil.h:97: error: expected constructor, destructor, or type conversion before '*' token
+../src/tld/TLDUtil.h:98: error: expected constructor, destructor, or type conversion before '*' token
+../src/tld/TLDUtil.h:104: error: expected constructor, destructor, or type conversion before '*' token
+../src/tld/TLDUtil.h:107: error: 'Rect' was not declared in this scope
+../src/tld/TLDUtil.h:107: error: 'Rect' was not declared in this scope
+../src/tld/TLDUtil.h:107: error: initializer expression list treated as compound expression
+../src/tld/TLDUtil.h:110: error: 'Rect' has not been declared
+In file included from ../src/tld/DetectorCascade.h:30,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/ForegroundDetector.h:35: error: 'cv' is not a namespace-name
+../src/tld/ForegroundDetector.h:35: error: expected namespace-name before ';' token
+../src/tld/ForegroundDetector.h:43: error: 'Mat' does not name a type
+../src/tld/ForegroundDetector.h:49: error: 'Mat' has not been declared
+In file included from ../src/tld/VarianceFilter.h:30,
+                 from ../src/tld/DetectorCascade.h:31,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/IntegralImage.h:31: error: 'cv' is not a namespace-name
+../src/tld/IntegralImage.h:31: error: expected namespace-name before ';' token
+../src/tld/IntegralImage.h:43: error: expected `)' before 'size'
+../src/tld/IntegralImage.h:51: error: 'Mat' has not been declared
+../src/tld/IntegralImage.h: In member function 'void tld::IntegralImage<T>::calcIntImg(int, bool)':
+../src/tld/IntegralImage.h:53: error: request for member 'data' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:55: error: request for member 'cols' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:56: error: request for member 'rows' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:57: error: request for member 'cols' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:58: error: request for member 'cols' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:59: error: request for member 'cols' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:60: error: request for member 'step' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:64: error: request for member 'cols' in 'img', which is of non-class type 'int'
+In file included from ../src/tld/DetectorCascade.h:31,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/VarianceFilter.h: At global scope:
+../src/tld/VarianceFilter.h:33: error: 'cv' is not a namespace-name
+../src/tld/VarianceFilter.h:33: error: expected namespace-name before ';' token
+../src/tld/VarianceFilter.h:52: error: 'Mat' has not been declared
+In file included from ../src/tld/DetectorCascade.h:32,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/EnsembleClassifier.h:31: error: 'cv' is not a namespace-name
+../src/tld/EnsembleClassifier.h:31: error: expected namespace-name before ';' token
+../src/tld/EnsembleClassifier.h:49: error: ISO C++ forbids declaration of 'Size' with no type
+../src/tld/EnsembleClassifier.h:49: error: expected ';' before '*' token
+../src/tld/EnsembleClassifier.h:70: error: 'Mat' has not been declared
+../src/tld/EnsembleClassifier.h:73: error: 'Mat' has not been declared
+In file included from ../src/tld/DetectorCascade.h:34,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/NNClassifier.h:36: error: 'cv' is not a namespace-name
+../src/tld/NNClassifier.h:36: error: expected namespace-name before ';' token
+../src/tld/NNClassifier.h:55: error: 'Mat' has not been declared
+../src/tld/NNClassifier.h:55: error: 'Rect' has not been declared
+../src/tld/NNClassifier.h:56: error: 'Mat' has not been declared
+In file included from ../src/tld/Clustering.cpp:28:
+../src/tld/DetectorCascade.h:47: error: ISO C++ forbids declaration of 'Size' with no type
+../src/tld/DetectorCascade.h:47: error: expected ';' before '*' token
+../src/tld/DetectorCascade.h:93: error: 'Mat' has not been declared
+../src/tld/Clustering.cpp: In member function 'void tld::Clustering::calcMeanRect(std::vector<int, std::allocator<int> >*)':
+../src/tld/Clustering.cpp:65: error: 'Rect' was not declared in this scope
+../src/tld/Clustering.cpp:65: error: 'rect' was not declared in this scope
+../src/tld/Clustering.cpp:65: error: expected type-specifier before 'Rect'
+../src/tld/Clustering.cpp:65: error: expected `;' before 'Rect'
+../src/tld/Clustering.cpp:66: error: 'class tld::DetectionResult' has no member named 'detectorBB'
+../src/tld/Clustering.cpp:67: error: 'floor' was not declared in this scope
+make: *** [src/tld/Clustering.o] Error 1
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project gnebehay ****
+
+make clean 
+rm -rf  ./src/tld/tracker/bb.o ./src/tld/tracker/bb_predict.o ./src/tld/tracker/fbtrack.o ./src/tld/tracker/lk.o ./src/tld/tracker/median.o  ./src/tld/Clustering.o ./src/tld/DetectionResult.o ./src/tld/DetectorCascade.o ./src/tld/EnsembleClassifier.o ./src/tld/ForegroundDetector.o ./src/tld/MedianFlowTracker.o ./src/tld/NNClassifier.o ./src/tld/TLD.o ./src/tld/TLDUtil.o ./src/tld/VarianceFilter.o  ./src/imacq/imAcq.o  ./src/Main.o ./src/config.o ./src/export.o ./src/gui.o ./src/settings.o  ./src/tld/tracker/bb.d ./src/tld/tracker/bb_predict.d ./src/tld/tracker/fbtrack.d ./src/tld/tracker/lk.d ./src/tld/tracker/median.d  ./src/tld/Clustering.d ./src/tld/DetectionResult.d ./src/tld/DetectorCascade.d ./src/tld/EnsembleClassifier.d ./src/tld/ForegroundDetector.d ./src/tld/MedianFlowTracker.d ./src/tld/NNClassifier.d ./src/tld/TLD.d ./src/tld/TLDUtil.d ./src/tld/VarianceFilter.d  ./src/imacq/imAcq.d  ./src/Main.d ./src/config.d ./src/export.d ./src/gui.d ./src/settings.d  gnebehay
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/tld/tracker/bb.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb.d" -MT"src/tld/tracker/bb.d" -o "src/tld/tracker/bb.o" "../src/tld/tracker/bb.cpp"
+Finished building: ../src/tld/tracker/bb.cpp
+ 
+Building file: ../src/tld/tracker/bb_predict.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb_predict.d" -MT"src/tld/tracker/bb_predict.d" -o "src/tld/tracker/bb_predict.o" "../src/tld/tracker/bb_predict.cpp"
+Finished building: ../src/tld/tracker/bb_predict.cpp
+ 
+Building file: ../src/tld/tracker/fbtrack.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/fbtrack.d" -MT"src/tld/tracker/fbtrack.d" -o "src/tld/tracker/fbtrack.o" "../src/tld/tracker/fbtrack.cpp"
+Finished building: ../src/tld/tracker/fbtrack.cpp
+ 
+Building file: ../src/tld/tracker/lk.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/lk.d" -MT"src/tld/tracker/lk.d" -o "src/tld/tracker/lk.o" "../src/tld/tracker/lk.cpp"
+Finished building: ../src/tld/tracker/lk.cpp
+ 
+Building file: ../src/tld/tracker/median.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/median.d" -MT"src/tld/tracker/median.d" -o "src/tld/tracker/median.o" "../src/tld/tracker/median.cpp"
+Finished building: ../src/tld/tracker/median.cpp
+ 
+Building file: ../src/tld/Clustering.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/Clustering.d" -MT"src/tld/Clustering.d" -o "src/tld/Clustering.o" "../src/tld/Clustering.cpp"
+In file included from ../src/tld/Clustering.cpp:26:
+../src/tld/Clustering.h:30:16: warning: cv.h: No such file or directory
+In file included from ../src/tld/Clustering.h:32,
+                 from ../src/tld/Clustering.cpp:26:
+../src/tld/DetectionResult.h:33: error: 'cv' is not a namespace-name
+../src/tld/DetectionResult.h:33: error: expected namespace-name before ';' token
+../src/tld/DetectionResult.h:40: error: 'Rect' was not declared in this scope
+../src/tld/DetectionResult.h:40: error: template argument 1 is invalid
+../src/tld/DetectionResult.h:40: error: template argument 2 is invalid
+../src/tld/DetectionResult.h:46: error: ISO C++ forbids declaration of 'Rect' with no type
+../src/tld/DetectionResult.h:46: error: expected ';' before '*' token
+In file included from ../src/tld/Clustering.cpp:26:
+../src/tld/Clustering.h:35: error: 'cv' is not a namespace-name
+../src/tld/Clustering.h:35: error: expected namespace-name before ';' token
+In file included from ../src/tld/Clustering.cpp:27:
+../src/tld/TLDUtil.h:32: error: 'cv' is not a namespace-name
+../src/tld/TLDUtil.h:32: error: expected namespace-name before ';' token
+../src/tld/TLDUtil.h:69: error: variable or field 'tldRectToArray' declared void
+../src/tld/TLDUtil.h:69: error: 'Rect' was not declared in this scope
+../src/tld/TLDUtil.h:69: error: expected primary-expression before '*' token
+../src/tld/TLDUtil.h:69: error: 'boundary' was not declared in this scope
+../src/tld/TLDUtil.h:77: error: expected constructor, destructor, or type conversion before 'tldArrayToRect'
+../src/tld/TLDUtil.h:89: error: variable or field 'tldRectToPoints' declared void
+../src/tld/TLDUtil.h:89: error: 'CvRect' was not declared in this scope
+../src/tld/TLDUtil.h:89: error: 'CvPoint' was not declared in this scope
+../src/tld/TLDUtil.h:89: error: 'p1' was not declared in this scope
+../src/tld/TLDUtil.h:89: error: 'CvPoint' was not declared in this scope
+../src/tld/TLDUtil.h:89: error: 'p2' was not declared in this scope
+../src/tld/TLDUtil.h:90: error: 'CvPoint' has not been declared
+../src/tld/TLDUtil.h:90: error: 'CvPoint' has not been declared
+../src/tld/TLDUtil.h:92: error: variable or field 'tldNormalizeImg' declared void
+../src/tld/TLDUtil.h:92: error: 'IplImage' was not declared in this scope
+../src/tld/TLDUtil.h:92: error: 'img' was not declared in this scope
+../src/tld/TLDUtil.h:92: error: expected primary-expression before 'float'
+../src/tld/TLDUtil.h:92: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: variable or field 'tldExtractNormalizedPatch' declared void
+../src/tld/TLDUtil.h:94: error: 'Mat' was not declared in this scope
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'float'
+../src/tld/TLDUtil.h:95: error: variable or field 'tldExtractNormalizedPatchBB' declared void
+../src/tld/TLDUtil.h:95: error: 'Mat' was not declared in this scope
+../src/tld/TLDUtil.h:95: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:95: error: expected primary-expression before 'float'
+../src/tld/TLDUtil.h:96: error: variable or field 'tldExtractNormalizedPatchRect' declared void
+../src/tld/TLDUtil.h:96: error: 'Mat' was not declared in this scope
+../src/tld/TLDUtil.h:96: error: 'Rect' was not declared in this scope
+../src/tld/TLDUtil.h:96: error: 'rect' was not declared in this scope
+../src/tld/TLDUtil.h:96: error: expected primary-expression before 'float'
+../src/tld/TLDUtil.h:97: error: expected constructor, destructor, or type conversion before '*' token
+../src/tld/TLDUtil.h:98: error: expected constructor, destructor, or type conversion before '*' token
+../src/tld/TLDUtil.h:104: error: expected constructor, destructor, or type conversion before '*' token
+../src/tld/TLDUtil.h:107: error: 'Rect' was not declared in this scope
+../src/tld/TLDUtil.h:107: error: 'Rect' was not declared in this scope
+../src/tld/TLDUtil.h:107: error: initializer expression list treated as compound expression
+../src/tld/TLDUtil.h:110: error: 'Rect' has not been declared
+In file included from ../src/tld/DetectorCascade.h:30,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/ForegroundDetector.h:35: error: 'cv' is not a namespace-name
+../src/tld/ForegroundDetector.h:35: error: expected namespace-name before ';' token
+../src/tld/ForegroundDetector.h:43: error: 'Mat' does not name a type
+../src/tld/ForegroundDetector.h:49: error: 'Mat' has not been declared
+In file included from ../src/tld/VarianceFilter.h:30,
+                 from ../src/tld/DetectorCascade.h:31,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/IntegralImage.h:31: error: 'cv' is not a namespace-name
+../src/tld/IntegralImage.h:31: error: expected namespace-name before ';' token
+../src/tld/IntegralImage.h:43: error: expected `)' before 'size'
+../src/tld/IntegralImage.h:51: error: 'Mat' has not been declared
+../src/tld/IntegralImage.h: In member function 'void tld::IntegralImage<T>::calcIntImg(int, bool)':
+../src/tld/IntegralImage.h:53: error: request for member 'data' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:55: error: request for member 'cols' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:56: error: request for member 'rows' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:57: error: request for member 'cols' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:58: error: request for member 'cols' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:59: error: request for member 'cols' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:60: error: request for member 'step' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:64: error: request for member 'cols' in 'img', which is of non-class type 'int'
+In file included from ../src/tld/DetectorCascade.h:31,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/VarianceFilter.h: At global scope:
+../src/tld/VarianceFilter.h:33: error: 'cv' is not a namespace-name
+../src/tld/VarianceFilter.h:33: error: expected namespace-name before ';' token
+../src/tld/VarianceFilter.h:52: error: 'Mat' has not been declared
+In file included from ../src/tld/DetectorCascade.h:32,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/EnsembleClassifier.h:31: error: 'cv' is not a namespace-name
+../src/tld/EnsembleClassifier.h:31: error: expected namespace-name before ';' token
+../src/tld/EnsembleClassifier.h:49: error: ISO C++ forbids declaration of 'Size' with no type
+../src/tld/EnsembleClassifier.h:49: error: expected ';' before '*' token
+../src/tld/EnsembleClassifier.h:70: error: 'Mat' has not been declared
+../src/tld/EnsembleClassifier.h:73: error: 'Mat' has not been declared
+In file included from ../src/tld/DetectorCascade.h:34,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/NNClassifier.h:36: error: 'cv' is not a namespace-name
+../src/tld/NNClassifier.h:36: error: expected namespace-name before ';' token
+../src/tld/NNClassifier.h:55: error: 'Mat' has not been declared
+../src/tld/NNClassifier.h:55: error: 'Rect' has not been declared
+../src/tld/NNClassifier.h:56: error: 'Mat' has not been declared
+In file included from ../src/tld/Clustering.cpp:28:
+../src/tld/DetectorCascade.h:47: error: ISO C++ forbids declaration of 'Size' with no type
+../src/tld/DetectorCascade.h:47: error: expected ';' before '*' token
+../src/tld/DetectorCascade.h:93: error: 'Mat' has not been declared
+../src/tld/Clustering.cpp: In member function 'void tld::Clustering::calcMeanRect(std::vector<int, std::allocator<int> >*)':
+../src/tld/Clustering.cpp:65: error: 'Rect' was not declared in this scope
+../src/tld/Clustering.cpp:65: error: 'rect' was not declared in this scope
+../src/tld/Clustering.cpp:65: error: expected type-specifier before 'Rect'
+../src/tld/Clustering.cpp:65: error: expected `;' before 'Rect'
+../src/tld/Clustering.cpp:66: error: 'class tld::DetectionResult' has no member named 'detectorBB'
+../src/tld/Clustering.cpp:67: error: 'floor' was not declared in this scope
+make: *** [src/tld/Clustering.o] Error 1
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project gnebehay ****
+
+make clean 
+rm -rf  ./src/tld/tracker/bb.o ./src/tld/tracker/bb_predict.o ./src/tld/tracker/fbtrack.o ./src/tld/tracker/lk.o ./src/tld/tracker/median.o  ./src/tld/Clustering.o ./src/tld/DetectionResult.o ./src/tld/DetectorCascade.o ./src/tld/EnsembleClassifier.o ./src/tld/ForegroundDetector.o ./src/tld/MedianFlowTracker.o ./src/tld/NNClassifier.o ./src/tld/TLD.o ./src/tld/TLDUtil.o ./src/tld/VarianceFilter.o  ./src/imacq/imAcq.o  ./src/Main.o ./src/config.o ./src/export.o ./src/gui.o ./src/settings.o  ./src/tld/tracker/bb.d ./src/tld/tracker/bb_predict.d ./src/tld/tracker/fbtrack.d ./src/tld/tracker/lk.d ./src/tld/tracker/median.d  ./src/tld/Clustering.d ./src/tld/DetectionResult.d ./src/tld/DetectorCascade.d ./src/tld/EnsembleClassifier.d ./src/tld/ForegroundDetector.d ./src/tld/MedianFlowTracker.d ./src/tld/NNClassifier.d ./src/tld/TLD.d ./src/tld/TLDUtil.d ./src/tld/VarianceFilter.d  ./src/imacq/imAcq.d  ./src/Main.d ./src/config.d ./src/export.d ./src/gui.d ./src/settings.d  gnebehay
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/tld/tracker/bb.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb.d" -MT"src/tld/tracker/bb.d" -o "src/tld/tracker/bb.o" "../src/tld/tracker/bb.cpp"
+Finished building: ../src/tld/tracker/bb.cpp
+ 
+Building file: ../src/tld/tracker/bb_predict.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb_predict.d" -MT"src/tld/tracker/bb_predict.d" -o "src/tld/tracker/bb_predict.o" "../src/tld/tracker/bb_predict.cpp"
+Finished building: ../src/tld/tracker/bb_predict.cpp
+ 
+Building file: ../src/tld/tracker/fbtrack.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/fbtrack.d" -MT"src/tld/tracker/fbtrack.d" -o "src/tld/tracker/fbtrack.o" "../src/tld/tracker/fbtrack.cpp"
+Finished building: ../src/tld/tracker/fbtrack.cpp
+ 
+Building file: ../src/tld/tracker/lk.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/lk.d" -MT"src/tld/tracker/lk.d" -o "src/tld/tracker/lk.o" "../src/tld/tracker/lk.cpp"
+Finished building: ../src/tld/tracker/lk.cpp
+ 
+Building file: ../src/tld/tracker/median.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/median.d" -MT"src/tld/tracker/median.d" -o "src/tld/tracker/median.o" "../src/tld/tracker/median.cpp"
+Finished building: ../src/tld/tracker/median.cpp
+ 
+Building file: ../src/tld/Clustering.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/Clustering.d" -MT"src/tld/Clustering.d" -o "src/tld/Clustering.o" "../src/tld/Clustering.cpp"
+In file included from ../src/tld/Clustering.cpp:26:
+../src/tld/Clustering.h:30:16: warning: cv.h: No such file or directory
+In file included from ../src/tld/Clustering.h:32,
+                 from ../src/tld/Clustering.cpp:26:
+../src/tld/DetectionResult.h:33: error: 'cv' is not a namespace-name
+../src/tld/DetectionResult.h:33: error: expected namespace-name before ';' token
+../src/tld/DetectionResult.h:40: error: 'Rect' was not declared in this scope
+../src/tld/DetectionResult.h:40: error: template argument 1 is invalid
+../src/tld/DetectionResult.h:40: error: template argument 2 is invalid
+../src/tld/DetectionResult.h:46: error: ISO C++ forbids declaration of 'Rect' with no type
+../src/tld/DetectionResult.h:46: error: expected ';' before '*' token
+In file included from ../src/tld/Clustering.cpp:26:
+../src/tld/Clustering.h:35: error: 'cv' is not a namespace-name
+../src/tld/Clustering.h:35: error: expected namespace-name before ';' token
+In file included from ../src/tld/Clustering.cpp:27:
+../src/tld/TLDUtil.h:32: error: 'cv' is not a namespace-name
+../src/tld/TLDUtil.h:32: error: expected namespace-name before ';' token
+../src/tld/TLDUtil.h:69: error: variable or field 'tldRectToArray' declared void
+../src/tld/TLDUtil.h:69: error: 'Rect' was not declared in this scope
+../src/tld/TLDUtil.h:69: error: expected primary-expression before '*' token
+../src/tld/TLDUtil.h:69: error: 'boundary' was not declared in this scope
+../src/tld/TLDUtil.h:77: error: expected constructor, destructor, or type conversion before 'tldArrayToRect'
+../src/tld/TLDUtil.h:89: error: variable or field 'tldRectToPoints' declared void
+../src/tld/TLDUtil.h:89: error: 'CvRect' was not declared in this scope
+../src/tld/TLDUtil.h:89: error: 'CvPoint' was not declared in this scope
+../src/tld/TLDUtil.h:89: error: 'p1' was not declared in this scope
+../src/tld/TLDUtil.h:89: error: 'CvPoint' was not declared in this scope
+../src/tld/TLDUtil.h:89: error: 'p2' was not declared in this scope
+../src/tld/TLDUtil.h:90: error: 'CvPoint' has not been declared
+../src/tld/TLDUtil.h:90: error: 'CvPoint' has not been declared
+../src/tld/TLDUtil.h:92: error: variable or field 'tldNormalizeImg' declared void
+../src/tld/TLDUtil.h:92: error: 'IplImage' was not declared in this scope
+../src/tld/TLDUtil.h:92: error: 'img' was not declared in this scope
+../src/tld/TLDUtil.h:92: error: expected primary-expression before 'float'
+../src/tld/TLDUtil.h:92: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: variable or field 'tldExtractNormalizedPatch' declared void
+../src/tld/TLDUtil.h:94: error: 'Mat' was not declared in this scope
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:94: error: expected primary-expression before 'float'
+../src/tld/TLDUtil.h:95: error: variable or field 'tldExtractNormalizedPatchBB' declared void
+../src/tld/TLDUtil.h:95: error: 'Mat' was not declared in this scope
+../src/tld/TLDUtil.h:95: error: expected primary-expression before 'int'
+../src/tld/TLDUtil.h:95: error: expected primary-expression before 'float'
+../src/tld/TLDUtil.h:96: error: variable or field 'tldExtractNormalizedPatchRect' declared void
+../src/tld/TLDUtil.h:96: error: 'Mat' was not declared in this scope
+../src/tld/TLDUtil.h:96: error: 'Rect' was not declared in this scope
+../src/tld/TLDUtil.h:96: error: 'rect' was not declared in this scope
+../src/tld/TLDUtil.h:96: error: expected primary-expression before 'float'
+../src/tld/TLDUtil.h:97: error: expected constructor, destructor, or type conversion before '*' token
+../src/tld/TLDUtil.h:98: error: expected constructor, destructor, or type conversion before '*' token
+../src/tld/TLDUtil.h:104: error: expected constructor, destructor, or type conversion before '*' token
+../src/tld/TLDUtil.h:107: error: 'Rect' was not declared in this scope
+../src/tld/TLDUtil.h:107: error: 'Rect' was not declared in this scope
+../src/tld/TLDUtil.h:107: error: initializer expression list treated as compound expression
+../src/tld/TLDUtil.h:110: error: 'Rect' has not been declared
+In file included from ../src/tld/DetectorCascade.h:30,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/ForegroundDetector.h:35: error: 'cv' is not a namespace-name
+../src/tld/ForegroundDetector.h:35: error: expected namespace-name before ';' token
+../src/tld/ForegroundDetector.h:43: error: 'Mat' does not name a type
+../src/tld/ForegroundDetector.h:49: error: 'Mat' has not been declared
+In file included from ../src/tld/VarianceFilter.h:30,
+                 from ../src/tld/DetectorCascade.h:31,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/IntegralImage.h:31: error: 'cv' is not a namespace-name
+../src/tld/IntegralImage.h:31: error: expected namespace-name before ';' token
+../src/tld/IntegralImage.h:43: error: expected `)' before 'size'
+../src/tld/IntegralImage.h:51: error: 'Mat' has not been declared
+../src/tld/IntegralImage.h: In member function 'void tld::IntegralImage<T>::calcIntImg(int, bool)':
+../src/tld/IntegralImage.h:53: error: request for member 'data' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:55: error: request for member 'cols' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:56: error: request for member 'rows' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:57: error: request for member 'cols' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:58: error: request for member 'cols' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:59: error: request for member 'cols' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:60: error: request for member 'step' in 'img', which is of non-class type 'int'
+../src/tld/IntegralImage.h:64: error: request for member 'cols' in 'img', which is of non-class type 'int'
+In file included from ../src/tld/DetectorCascade.h:31,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/VarianceFilter.h: At global scope:
+../src/tld/VarianceFilter.h:33: error: 'cv' is not a namespace-name
+../src/tld/VarianceFilter.h:33: error: expected namespace-name before ';' token
+../src/tld/VarianceFilter.h:52: error: 'Mat' has not been declared
+In file included from ../src/tld/DetectorCascade.h:32,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/EnsembleClassifier.h:31: error: 'cv' is not a namespace-name
+../src/tld/EnsembleClassifier.h:31: error: expected namespace-name before ';' token
+../src/tld/EnsembleClassifier.h:49: error: ISO C++ forbids declaration of 'Size' with no type
+../src/tld/EnsembleClassifier.h:49: error: expected ';' before '*' token
+../src/tld/EnsembleClassifier.h:70: error: 'Mat' has not been declared
+../src/tld/EnsembleClassifier.h:73: error: 'Mat' has not been declared
+In file included from ../src/tld/DetectorCascade.h:34,
+                 from ../src/tld/Clustering.cpp:28:
+../src/tld/NNClassifier.h:36: error: 'cv' is not a namespace-name
+../src/tld/NNClassifier.h:36: error: expected namespace-name before ';' token
+../src/tld/NNClassifier.h:55: error: 'Mat' has not been declared
+../src/tld/NNClassifier.h:55: error: 'Rect' has not been declared
+../src/tld/NNClassifier.h:56: error: 'Mat' has not been declared
+In file included from ../src/tld/Clustering.cpp:28:
+../src/tld/DetectorCascade.h:47: error: ISO C++ forbids declaration of 'Size' with no type
+../src/tld/DetectorCascade.h:47: error: expected ';' before '*' token
+../src/tld/DetectorCascade.h:93: error: 'Mat' has not been declared
+../src/tld/Clustering.cpp: In member function 'void tld::Clustering::calcMeanRect(std::vector<int, std::allocator<int> >*)':
+../src/tld/Clustering.cpp:65: error: 'Rect' was not declared in this scope
+../src/tld/Clustering.cpp:65: error: 'rect' was not declared in this scope
+../src/tld/Clustering.cpp:65: error: expected type-specifier before 'Rect'
+../src/tld/Clustering.cpp:65: error: expected `;' before 'Rect'
+../src/tld/Clustering.cpp:66: error: 'class tld::DetectionResult' has no member named 'detectorBB'
+../src/tld/Clustering.cpp:67: error: 'floor' was not declared in this scope
+make: *** [src/tld/Clustering.o] Error 1
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project gnebehay ****
+
+make clean 
+rm -rf  ./src/tld/tracker/bb.o ./src/tld/tracker/bb_predict.o ./src/tld/tracker/fbtrack.o ./src/tld/tracker/lk.o ./src/tld/tracker/median.o  ./src/tld/Clustering.o ./src/tld/DetectionResult.o ./src/tld/DetectorCascade.o ./src/tld/EnsembleClassifier.o ./src/tld/ForegroundDetector.o ./src/tld/MedianFlowTracker.o ./src/tld/NNClassifier.o ./src/tld/TLD.o ./src/tld/TLDUtil.o ./src/tld/VarianceFilter.o  ./src/imacq/imAcq.o  ./src/Main.o ./src/config.o ./src/export.o ./src/gui.o ./src/settings.o  ./src/tld/tracker/bb.d ./src/tld/tracker/bb_predict.d ./src/tld/tracker/fbtrack.d ./src/tld/tracker/lk.d ./src/tld/tracker/median.d  ./src/tld/Clustering.d ./src/tld/DetectionResult.d ./src/tld/DetectorCascade.d ./src/tld/EnsembleClassifier.d ./src/tld/ForegroundDetector.d ./src/tld/MedianFlowTracker.d ./src/tld/NNClassifier.d ./src/tld/TLD.d ./src/tld/TLDUtil.d ./src/tld/VarianceFilter.d  ./src/imacq/imAcq.d  ./src/Main.d ./src/config.d ./src/export.d ./src/gui.d ./src/settings.d  gnebehay
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/tld/tracker/bb.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb.d" -MT"src/tld/tracker/bb.d" -o "src/tld/tracker/bb.o" "../src/tld/tracker/bb.cpp"
+Finished building: ../src/tld/tracker/bb.cpp
+ 
+Building file: ../src/tld/tracker/bb_predict.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb_predict.d" -MT"src/tld/tracker/bb_predict.d" -o "src/tld/tracker/bb_predict.o" "../src/tld/tracker/bb_predict.cpp"
+Finished building: ../src/tld/tracker/bb_predict.cpp
+ 
+Building file: ../src/tld/tracker/fbtrack.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/fbtrack.d" -MT"src/tld/tracker/fbtrack.d" -o "src/tld/tracker/fbtrack.o" "../src/tld/tracker/fbtrack.cpp"
+Finished building: ../src/tld/tracker/fbtrack.cpp
+ 
+Building file: ../src/tld/tracker/lk.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/lk.d" -MT"src/tld/tracker/lk.d" -o "src/tld/tracker/lk.o" "../src/tld/tracker/lk.cpp"
+Finished building: ../src/tld/tracker/lk.cpp
+ 
+Building file: ../src/tld/tracker/median.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/median.d" -MT"src/tld/tracker/median.d" -o "src/tld/tracker/median.o" "../src/tld/tracker/median.cpp"
+Finished building: ../src/tld/tracker/median.cpp
+ 
+Building file: ../src/tld/Clustering.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/Clustering.d" -MT"src/tld/Clustering.d" -o "src/tld/Clustering.o" "../src/tld/Clustering.cpp"
+Finished building: ../src/tld/Clustering.cpp
+ 
+Building file: ../src/tld/DetectionResult.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectionResult.d" -MT"src/tld/DetectionResult.d" -o "src/tld/DetectionResult.o" "../src/tld/DetectionResult.cpp"
+Finished building: ../src/tld/DetectionResult.cpp
+ 
+Building file: ../src/tld/DetectorCascade.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectorCascade.d" -MT"src/tld/DetectorCascade.d" -o "src/tld/DetectorCascade.o" "../src/tld/DetectorCascade.cpp"
+../src/tld/DetectorCascade.cpp:244: warning: ignoring #pragma omp parallel
+Finished building: ../src/tld/DetectorCascade.cpp
+ 
+Building file: ../src/tld/EnsembleClassifier.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/EnsembleClassifier.d" -MT"src/tld/EnsembleClassifier.d" -o "src/tld/EnsembleClassifier.o" "../src/tld/EnsembleClassifier.cpp"
+Finished building: ../src/tld/EnsembleClassifier.cpp
+ 
+Building file: ../src/tld/ForegroundDetector.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/ForegroundDetector.d" -MT"src/tld/ForegroundDetector.d" -o "src/tld/ForegroundDetector.o" "../src/tld/ForegroundDetector.cpp"
+../src/tld/ForegroundDetector.cpp:28:24: error: BlobResult.h: No such file or directory
+../src/tld/ForegroundDetector.cpp: In member function 'void tld::ForegroundDetector::nextIteration(cv::Mat)':
+../src/tld/ForegroundDetector.cpp:56: error: 'CBlobResult' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:56: error: expected `;' before 'blobs'
+../src/tld/ForegroundDetector.cpp:58: error: 'blobs' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_EXCLUDE' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'CBlobGetArea' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_LESS' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'CBlob' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'blob' was not declared in this scope
+make: *** [src/tld/ForegroundDetector.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/tld/DetectorCascade.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectorCascade.d" -MT"src/tld/DetectorCascade.d" -o "src/tld/DetectorCascade.o" "../src/tld/DetectorCascade.cpp"
+Finished building: ../src/tld/DetectorCascade.cpp
+ 
+Building file: ../src/tld/ForegroundDetector.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/ForegroundDetector.d" -MT"src/tld/ForegroundDetector.d" -o "src/tld/ForegroundDetector.o" "../src/tld/ForegroundDetector.cpp"
+../src/tld/ForegroundDetector.cpp:28:24: error: BlobResult.h: No such file or directory
+../src/tld/ForegroundDetector.cpp: In member function 'void tld::ForegroundDetector::nextIteration(cv::Mat)':
+../src/tld/ForegroundDetector.cpp:56: error: 'CBlobResult' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:56: error: expected `;' before 'blobs'
+../src/tld/ForegroundDetector.cpp:58: error: 'blobs' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_EXCLUDE' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'CBlobGetArea' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_LESS' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'CBlob' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'blob' was not declared in this scope
+make: *** [src/tld/ForegroundDetector.o] Error 1
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project gnebehay ****
+
+make clean 
+rm -rf  ./src/tld/tracker/bb.o ./src/tld/tracker/bb_predict.o ./src/tld/tracker/fbtrack.o ./src/tld/tracker/lk.o ./src/tld/tracker/median.o  ./src/tld/Clustering.o ./src/tld/DetectionResult.o ./src/tld/DetectorCascade.o ./src/tld/EnsembleClassifier.o ./src/tld/ForegroundDetector.o ./src/tld/MedianFlowTracker.o ./src/tld/NNClassifier.o ./src/tld/TLD.o ./src/tld/TLDUtil.o ./src/tld/VarianceFilter.o  ./src/imacq/imAcq.o  ./src/Main.o ./src/config.o ./src/export.o ./src/gui.o ./src/settings.o  ./src/tld/tracker/bb.d ./src/tld/tracker/bb_predict.d ./src/tld/tracker/fbtrack.d ./src/tld/tracker/lk.d ./src/tld/tracker/median.d  ./src/tld/Clustering.d ./src/tld/DetectionResult.d ./src/tld/DetectorCascade.d ./src/tld/EnsembleClassifier.d ./src/tld/ForegroundDetector.d ./src/tld/MedianFlowTracker.d ./src/tld/NNClassifier.d ./src/tld/TLD.d ./src/tld/TLDUtil.d ./src/tld/VarianceFilter.d  ./src/imacq/imAcq.d  ./src/Main.d ./src/config.d ./src/export.d ./src/gui.d ./src/settings.d  gnebehay
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/tld/tracker/bb.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb.d" -MT"src/tld/tracker/bb.d" -o "src/tld/tracker/bb.o" "../src/tld/tracker/bb.cpp"
+Finished building: ../src/tld/tracker/bb.cpp
+ 
+Building file: ../src/tld/tracker/bb_predict.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb_predict.d" -MT"src/tld/tracker/bb_predict.d" -o "src/tld/tracker/bb_predict.o" "../src/tld/tracker/bb_predict.cpp"
+Finished building: ../src/tld/tracker/bb_predict.cpp
+ 
+Building file: ../src/tld/tracker/fbtrack.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/fbtrack.d" -MT"src/tld/tracker/fbtrack.d" -o "src/tld/tracker/fbtrack.o" "../src/tld/tracker/fbtrack.cpp"
+Finished building: ../src/tld/tracker/fbtrack.cpp
+ 
+Building file: ../src/tld/tracker/lk.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/lk.d" -MT"src/tld/tracker/lk.d" -o "src/tld/tracker/lk.o" "../src/tld/tracker/lk.cpp"
+Finished building: ../src/tld/tracker/lk.cpp
+ 
+Building file: ../src/tld/tracker/median.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/median.d" -MT"src/tld/tracker/median.d" -o "src/tld/tracker/median.o" "../src/tld/tracker/median.cpp"
+Finished building: ../src/tld/tracker/median.cpp
+ 
+Building file: ../src/tld/Clustering.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/Clustering.d" -MT"src/tld/Clustering.d" -o "src/tld/Clustering.o" "../src/tld/Clustering.cpp"
+Finished building: ../src/tld/Clustering.cpp
+ 
+Building file: ../src/tld/DetectionResult.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectionResult.d" -MT"src/tld/DetectionResult.d" -o "src/tld/DetectionResult.o" "../src/tld/DetectionResult.cpp"
+Finished building: ../src/tld/DetectionResult.cpp
+ 
+Building file: ../src/tld/DetectorCascade.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectorCascade.d" -MT"src/tld/DetectorCascade.d" -o "src/tld/DetectorCascade.o" "../src/tld/DetectorCascade.cpp"
+Finished building: ../src/tld/DetectorCascade.cpp
+ 
+Building file: ../src/tld/EnsembleClassifier.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/EnsembleClassifier.d" -MT"src/tld/EnsembleClassifier.d" -o "src/tld/EnsembleClassifier.o" "../src/tld/EnsembleClassifier.cpp"
+Finished building: ../src/tld/EnsembleClassifier.cpp
+ 
+Building file: ../src/tld/ForegroundDetector.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/ForegroundDetector.d" -MT"src/tld/ForegroundDetector.d" -o "src/tld/ForegroundDetector.o" "../src/tld/ForegroundDetector.cpp"
+../src/tld/ForegroundDetector.cpp:28:24: error: BlobResult.h: No such file or directory
+../src/tld/ForegroundDetector.cpp: In member function 'void tld::ForegroundDetector::nextIteration(cv::Mat)':
+../src/tld/ForegroundDetector.cpp:56: error: 'CBlobResult' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:56: error: expected `;' before 'blobs'
+../src/tld/ForegroundDetector.cpp:58: error: 'blobs' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_EXCLUDE' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'CBlobGetArea' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_LESS' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'CBlob' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'blob' was not declared in this scope
+make: *** [src/tld/ForegroundDetector.o] Error 1
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project gnebehay ****
+
+make clean 
+rm -rf  ./src/tld/tracker/bb.o ./src/tld/tracker/bb_predict.o ./src/tld/tracker/fbtrack.o ./src/tld/tracker/lk.o ./src/tld/tracker/median.o  ./src/tld/Clustering.o ./src/tld/DetectionResult.o ./src/tld/DetectorCascade.o ./src/tld/EnsembleClassifier.o ./src/tld/ForegroundDetector.o ./src/tld/MedianFlowTracker.o ./src/tld/NNClassifier.o ./src/tld/TLD.o ./src/tld/TLDUtil.o ./src/tld/VarianceFilter.o  ./src/imacq/imAcq.o  ./src/Main.o ./src/config.o ./src/export.o ./src/gui.o ./src/settings.o  ./src/tld/tracker/bb.d ./src/tld/tracker/bb_predict.d ./src/tld/tracker/fbtrack.d ./src/tld/tracker/lk.d ./src/tld/tracker/median.d  ./src/tld/Clustering.d ./src/tld/DetectionResult.d ./src/tld/DetectorCascade.d ./src/tld/EnsembleClassifier.d ./src/tld/ForegroundDetector.d ./src/tld/MedianFlowTracker.d ./src/tld/NNClassifier.d ./src/tld/TLD.d ./src/tld/TLDUtil.d ./src/tld/VarianceFilter.d  ./src/imacq/imAcq.d  ./src/Main.d ./src/config.d ./src/export.d ./src/gui.d ./src/settings.d  gnebehay
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/tld/tracker/bb.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb.d" -MT"src/tld/tracker/bb.d" -o "src/tld/tracker/bb.o" "../src/tld/tracker/bb.cpp"
+Finished building: ../src/tld/tracker/bb.cpp
+ 
+Building file: ../src/tld/tracker/bb_predict.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb_predict.d" -MT"src/tld/tracker/bb_predict.d" -o "src/tld/tracker/bb_predict.o" "../src/tld/tracker/bb_predict.cpp"
+Finished building: ../src/tld/tracker/bb_predict.cpp
+ 
+Building file: ../src/tld/tracker/fbtrack.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/fbtrack.d" -MT"src/tld/tracker/fbtrack.d" -o "src/tld/tracker/fbtrack.o" "../src/tld/tracker/fbtrack.cpp"
+Finished building: ../src/tld/tracker/fbtrack.cpp
+ 
+Building file: ../src/tld/tracker/lk.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/lk.d" -MT"src/tld/tracker/lk.d" -o "src/tld/tracker/lk.o" "../src/tld/tracker/lk.cpp"
+Finished building: ../src/tld/tracker/lk.cpp
+ 
+Building file: ../src/tld/tracker/median.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/median.d" -MT"src/tld/tracker/median.d" -o "src/tld/tracker/median.o" "../src/tld/tracker/median.cpp"
+Finished building: ../src/tld/tracker/median.cpp
+ 
+Building file: ../src/tld/Clustering.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/Clustering.d" -MT"src/tld/Clustering.d" -o "src/tld/Clustering.o" "../src/tld/Clustering.cpp"
+Finished building: ../src/tld/Clustering.cpp
+ 
+Building file: ../src/tld/DetectionResult.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectionResult.d" -MT"src/tld/DetectionResult.d" -o "src/tld/DetectionResult.o" "../src/tld/DetectionResult.cpp"
+Finished building: ../src/tld/DetectionResult.cpp
+ 
+Building file: ../src/tld/DetectorCascade.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectorCascade.d" -MT"src/tld/DetectorCascade.d" -o "src/tld/DetectorCascade.o" "../src/tld/DetectorCascade.cpp"
+Finished building: ../src/tld/DetectorCascade.cpp
+ 
+Building file: ../src/tld/EnsembleClassifier.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/EnsembleClassifier.d" -MT"src/tld/EnsembleClassifier.d" -o "src/tld/EnsembleClassifier.o" "../src/tld/EnsembleClassifier.cpp"
+Finished building: ../src/tld/EnsembleClassifier.cpp
+ 
+Building file: ../src/tld/ForegroundDetector.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/ForegroundDetector.d" -MT"src/tld/ForegroundDetector.d" -o "src/tld/ForegroundDetector.o" "../src/tld/ForegroundDetector.cpp"
+../src/tld/ForegroundDetector.cpp:28:24: error: BlobResult.h: No such file or directory
+../src/tld/ForegroundDetector.cpp: In member function 'void tld::ForegroundDetector::nextIteration(cv::Mat)':
+../src/tld/ForegroundDetector.cpp:56: error: 'CBlobResult' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:56: error: expected `;' before 'blobs'
+../src/tld/ForegroundDetector.cpp:58: error: 'blobs' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_EXCLUDE' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'CBlobGetArea' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_LESS' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'CBlob' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'blob' was not declared in this scope
+make: *** [src/tld/ForegroundDetector.o] Error 1
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project gnebehay ****
+
+make clean 
+rm -rf  ./src/tld/tracker/bb.o ./src/tld/tracker/bb_predict.o ./src/tld/tracker/fbtrack.o ./src/tld/tracker/lk.o ./src/tld/tracker/median.o  ./src/tld/Clustering.o ./src/tld/DetectionResult.o ./src/tld/DetectorCascade.o ./src/tld/EnsembleClassifier.o ./src/tld/ForegroundDetector.o ./src/tld/MedianFlowTracker.o ./src/tld/NNClassifier.o ./src/tld/TLD.o ./src/tld/TLDUtil.o ./src/tld/VarianceFilter.o  ./src/imacq/imAcq.o  ./src/Main.o ./src/config.o ./src/export.o ./src/gui.o ./src/settings.o  ./src/tld/tracker/bb.d ./src/tld/tracker/bb_predict.d ./src/tld/tracker/fbtrack.d ./src/tld/tracker/lk.d ./src/tld/tracker/median.d  ./src/tld/Clustering.d ./src/tld/DetectionResult.d ./src/tld/DetectorCascade.d ./src/tld/EnsembleClassifier.d ./src/tld/ForegroundDetector.d ./src/tld/MedianFlowTracker.d ./src/tld/NNClassifier.d ./src/tld/TLD.d ./src/tld/TLDUtil.d ./src/tld/VarianceFilter.d  ./src/imacq/imAcq.d  ./src/Main.d ./src/config.d ./src/export.d ./src/gui.d ./src/settings.d  gnebehay
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/tld/tracker/bb.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb.d" -MT"src/tld/tracker/bb.d" -o "src/tld/tracker/bb.o" "../src/tld/tracker/bb.cpp"
+Finished building: ../src/tld/tracker/bb.cpp
+ 
+Building file: ../src/tld/tracker/bb_predict.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb_predict.d" -MT"src/tld/tracker/bb_predict.d" -o "src/tld/tracker/bb_predict.o" "../src/tld/tracker/bb_predict.cpp"
+Finished building: ../src/tld/tracker/bb_predict.cpp
+ 
+Building file: ../src/tld/tracker/fbtrack.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/fbtrack.d" -MT"src/tld/tracker/fbtrack.d" -o "src/tld/tracker/fbtrack.o" "../src/tld/tracker/fbtrack.cpp"
+Finished building: ../src/tld/tracker/fbtrack.cpp
+ 
+Building file: ../src/tld/tracker/lk.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/lk.d" -MT"src/tld/tracker/lk.d" -o "src/tld/tracker/lk.o" "../src/tld/tracker/lk.cpp"
+Finished building: ../src/tld/tracker/lk.cpp
+ 
+Building file: ../src/tld/tracker/median.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/median.d" -MT"src/tld/tracker/median.d" -o "src/tld/tracker/median.o" "../src/tld/tracker/median.cpp"
+Finished building: ../src/tld/tracker/median.cpp
+ 
+Building file: ../src/tld/Clustering.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/Clustering.d" -MT"src/tld/Clustering.d" -o "src/tld/Clustering.o" "../src/tld/Clustering.cpp"
+Finished building: ../src/tld/Clustering.cpp
+ 
+Building file: ../src/tld/DetectionResult.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectionResult.d" -MT"src/tld/DetectionResult.d" -o "src/tld/DetectionResult.o" "../src/tld/DetectionResult.cpp"
+Finished building: ../src/tld/DetectionResult.cpp
+ 
+Building file: ../src/tld/DetectorCascade.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectorCascade.d" -MT"src/tld/DetectorCascade.d" -o "src/tld/DetectorCascade.o" "../src/tld/DetectorCascade.cpp"
+Finished building: ../src/tld/DetectorCascade.cpp
+ 
+Building file: ../src/tld/EnsembleClassifier.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/EnsembleClassifier.d" -MT"src/tld/EnsembleClassifier.d" -o "src/tld/EnsembleClassifier.o" "../src/tld/EnsembleClassifier.cpp"
+Finished building: ../src/tld/EnsembleClassifier.cpp
+ 
+Building file: ../src/tld/ForegroundDetector.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/ForegroundDetector.d" -MT"src/tld/ForegroundDetector.d" -o "src/tld/ForegroundDetector.o" "../src/tld/ForegroundDetector.cpp"
+In file included from /Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs/BlobResult.h:37,
+                 from ../src/tld/ForegroundDetector.cpp:28:
+/Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs/Blob.h:16: warning: ignoring #pragma warning 
+In file included from /Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs/BlobOperators.h:4,
+                 from /Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs/BlobResult.h:38,
+                 from ../src/tld/ForegroundDetector.cpp:28:
+/Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs/Blob.h:16: warning: ignoring #pragma warning 
+In file included from /Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs/ComponentLabeling.h:6,
+                 from /Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs/BlobResult.h:39,
+                 from ../src/tld/ForegroundDetector.cpp:28:
+/Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs/Blob.h:16: warning: ignoring #pragma warning 
+In file included from /Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs/BlobContour.h:7,
+                 from /Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs/Blob.h:23,
+                 from /Users/andra/Documents/PredatorWS/gnebehay/include/cvblobs/BlobResult.h:37,
+                 from ../src/tld/ForegroundDetector.cpp:28:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:158: error: redefinition of 'union Cv32suf'
+/usr/local/include/opencv2/core/types_c.h:187: error: previous definition of 'union Cv32suf'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:164: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:164: error: conflicting declaration 'typedef int Cv32suf'
+/usr/local/include/opencv2/core/types_c.h:192: error: 'Cv32suf' has a previous declaration as 'typedef union Cv32suf Cv32suf'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:166: error: redefinition of 'union Cv64suf'
+/usr/local/include/opencv2/core/types_c.h:195: error: previous definition of 'union Cv64suf'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:172: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:172: error: conflicting declaration 'typedef int Cv64suf'
+/usr/local/include/opencv2/core/types_c.h:200: error: 'Cv64suf' has a previous declaration as 'typedef union Cv64suf Cv64suf'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'int cvRound(double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:205: error: redefinition of 'int cvRound(double)'
+/usr/local/include/opencv2/core/types_c.h:289: error: 'int cvRound(double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'int cvFloor(double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:232: error: redefinition of 'int cvFloor(double)'
+/usr/local/include/opencv2/core/types_c.h:311: error: 'int cvFloor(double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'int cvCeil(double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:247: error: redefinition of 'int cvCeil(double)'
+/usr/local/include/opencv2/core/types_c.h:329: error: 'int cvCeil(double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'int cvIsNaN(double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:264: error: redefinition of 'int cvIsNaN(double)'
+/usr/local/include/opencv2/core/types_c.h:349: error: 'int cvIsNaN(double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'int cvIsInf(double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:279: error: redefinition of 'int cvIsInf(double)'
+/usr/local/include/opencv2/core/types_c.h:364: error: 'int cvIsInf(double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'long long unsigned int cvRNG(long long int)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:298: error: redefinition of 'long long unsigned int cvRNG(long long int)'
+/usr/local/include/opencv2/core/types_c.h:385: error: 'CvRNG cvRNG(int64)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'unsigned int cvRandInt(long long unsigned int*)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:305: error: redefinition of 'unsigned int cvRandInt(long long unsigned int*)'
+/usr/local/include/opencv2/core/types_c.h:392: error: 'unsigned int cvRandInt(CvRNG*)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'double cvRandReal(long long unsigned int*)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:314: error: redefinition of 'double cvRandReal(long long unsigned int*)'
+/usr/local/include/opencv2/core/types_c.h:401: error: 'double cvRandReal(CvRNG*)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: At global scope:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:360: error: redefinition of 'struct _IplImage'
+/usr/local/include/opencv2/core/types_c.h:448: error: previous definition of 'struct _IplImage'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:393: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:393: error: conflicting declaration 'typedef int IplImage'
+/usr/local/include/opencv2/core/types_c.h:480: error: 'IplImage' has a previous declaration as 'typedef struct _IplImage IplImage'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:397: error: redefinition of 'struct _IplROI'
+/usr/local/include/opencv2/core/types_c.h:485: error: previous definition of 'struct _IplROI'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:405: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:405: error: conflicting declaration 'typedef int IplROI'
+/usr/local/include/opencv2/core/types_c.h:492: error: 'IplROI' has a previous declaration as 'typedef struct _IplROI IplROI'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:407: error: redefinition of 'struct _IplConvKernel'
+/usr/local/include/opencv2/core/types_c.h:495: error: previous definition of 'struct _IplConvKernel'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:416: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:416: error: conflicting declaration 'typedef int IplConvKernel'
+/usr/local/include/opencv2/core/types_c.h:503: error: 'IplConvKernel' has a previous declaration as 'typedef struct _IplConvKernel IplConvKernel'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:418: error: redefinition of 'struct _IplConvKernelFP'
+/usr/local/include/opencv2/core/types_c.h:506: error: previous definition of 'struct _IplConvKernelFP'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:426: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:426: error: conflicting declaration 'typedef int IplConvKernelFP'
+/usr/local/include/opencv2/core/types_c.h:513: error: 'IplConvKernelFP' has a previous declaration as 'typedef struct _IplConvKernelFP IplConvKernelFP'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:538: error: redefinition of 'struct CvMat'
+/usr/local/include/opencv2/core/types_c.h:628: error: previous definition of 'struct CvMat'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:574: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:574: error: conflicting declaration 'typedef int CvMat'
+/usr/local/include/opencv2/core/types_c.h:663: error: 'CvMat' has a previous declaration as 'typedef struct CvMat CvMat'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvMat cvMat(int, int, int, void*)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:615: error: redefinition of 'CvMat cvMat(int, int, int, void*)'
+/usr/local/include/opencv2/core/types_c.h:715: error: 'CvMat cvMat(int, int, int, void*)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'double cvmGet(const CvMat*, int, int)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:645: error: redefinition of 'double cvmGet(const CvMat*, int, int)'
+/usr/local/include/opencv2/core/types_c.h:745: error: 'double cvmGet(const CvMat*, int, int)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'void cvmSet(CvMat*, int, int, double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:663: error: redefinition of 'void cvmSet(CvMat*, int, int, double)'
+/usr/local/include/opencv2/core/types_c.h:763: error: 'void cvmSet(CvMat*, int, int, double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: At global scope:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:698: error: redefinition of 'struct CvMatND'
+/usr/local/include/opencv2/core/types_c.h:799: error: previous definition of 'struct CvMatND'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:722: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:722: error: conflicting declaration 'typedef int CvMatND'
+/usr/local/include/opencv2/core/types_c.h:822: error: 'CvMatND' has a previous declaration as 'typedef struct CvMatND CvMatND'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:740: error: redefinition of 'struct CvSparseMat'
+/usr/local/include/opencv2/core/types_c.h:841: error: previous definition of 'struct CvSparseMat'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:754: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:754: error: conflicting declaration 'typedef int CvSparseMat'
+/usr/local/include/opencv2/core/types_c.h:854: error: 'CvSparseMat' has a previous declaration as 'typedef struct CvSparseMat CvSparseMat'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:765: error: redefinition of 'struct CvSparseNode'
+/usr/local/include/opencv2/core/types_c.h:866: error: previous definition of 'struct CvSparseNode'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:770: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:770: error: conflicting declaration 'typedef int CvSparseNode'
+/usr/local/include/opencv2/core/types_c.h:870: error: 'CvSparseNode' has a previous declaration as 'typedef struct CvSparseNode CvSparseNode'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:772: error: redefinition of 'struct CvSparseMatIterator'
+/usr/local/include/opencv2/core/types_c.h:873: error: previous definition of 'struct CvSparseMatIterator'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:778: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:778: error: conflicting declaration 'typedef int CvSparseMatIterator'
+/usr/local/include/opencv2/core/types_c.h:878: error: 'CvSparseMatIterator' has a previous declaration as 'typedef struct CvSparseMatIterator CvSparseMatIterator'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:803: error: redefinition of 'struct CvHistogram'
+/usr/local/include/opencv2/core/types_c.h:904: error: previous definition of 'struct CvHistogram'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:811: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:811: error: conflicting declaration 'typedef int CvHistogram'
+/usr/local/include/opencv2/core/types_c.h:911: error: 'CvHistogram' has a previous declaration as 'typedef struct CvHistogram CvHistogram'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:833: error: redefinition of 'struct CvRect'
+/usr/local/include/opencv2/core/types_c.h:934: error: previous definition of 'struct CvRect'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:840: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:840: error: conflicting declaration 'typedef int CvRect'
+/usr/local/include/opencv2/core/types_c.h:940: error: 'CvRect' has a previous declaration as 'typedef struct CvRect CvRect'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvRect cvRect(int, int, int, int)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:842: error: redefinition of 'CvRect cvRect(int, int, int, int)'
+/usr/local/include/opencv2/core/types_c.h:942: error: 'CvRect cvRect(int, int, int, int)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'IplROI cvRectToROI(CvRect, int)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:855: error: redefinition of 'IplROI cvRectToROI(CvRect, int)'
+/usr/local/include/opencv2/core/types_c.h:955: error: 'IplROI cvRectToROI(CvRect, int)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvRect cvROIToRect(IplROI)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:868: error: redefinition of 'CvRect cvROIToRect(IplROI)'
+/usr/local/include/opencv2/core/types_c.h:968: error: 'CvRect cvROIToRect(IplROI)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: At global scope:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:879: error: redefinition of 'struct CvTermCriteria'
+/usr/local/include/opencv2/core/types_c.h:980: error: previous definition of 'struct CvTermCriteria'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:887: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:887: error: conflicting declaration 'typedef int CvTermCriteria'
+/usr/local/include/opencv2/core/types_c.h:987: error: 'CvTermCriteria' has a previous declaration as 'typedef struct CvTermCriteria CvTermCriteria'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvTermCriteria cvTermCriteria(int, int, double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:889: error: redefinition of 'CvTermCriteria cvTermCriteria(int, int, double)'
+/usr/local/include/opencv2/core/types_c.h:989: error: 'CvTermCriteria cvTermCriteria(int, int, double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: At global scope:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:903: error: redefinition of 'struct CvPoint'
+/usr/local/include/opencv2/core/types_c.h:1004: error: previous definition of 'struct CvPoint'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:908: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:908: error: conflicting declaration 'typedef int CvPoint'
+/usr/local/include/opencv2/core/types_c.h:1008: error: 'CvPoint' has a previous declaration as 'typedef struct CvPoint CvPoint'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvPoint cvPoint(int, int)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:911: error: redefinition of 'CvPoint cvPoint(int, int)'
+/usr/local/include/opencv2/core/types_c.h:1011: error: 'CvPoint cvPoint(int, int)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: At global scope:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:922: error: redefinition of 'struct CvPoint2D32f'
+/usr/local/include/opencv2/core/types_c.h:1023: error: previous definition of 'struct CvPoint2D32f'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:927: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:927: error: conflicting declaration 'typedef int CvPoint2D32f'
+/usr/local/include/opencv2/core/types_c.h:1027: error: 'CvPoint2D32f' has a previous declaration as 'typedef struct CvPoint2D32f CvPoint2D32f'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvPoint2D32f cvPoint2D32f(double, double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:930: error: redefinition of 'CvPoint2D32f cvPoint2D32f(double, double)'
+/usr/local/include/opencv2/core/types_c.h:1030: error: 'CvPoint2D32f cvPoint2D32f(double, double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvPoint2D32f cvPointTo32f(CvPoint)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:941: error: redefinition of 'CvPoint2D32f cvPointTo32f(CvPoint)'
+/usr/local/include/opencv2/core/types_c.h:1041: error: 'CvPoint2D32f cvPointTo32f(CvPoint)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvPoint cvPointFrom32f(CvPoint2D32f)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:947: error: redefinition of 'CvPoint cvPointFrom32f(CvPoint2D32f)'
+/usr/local/include/opencv2/core/types_c.h:1047: error: 'CvPoint cvPointFrom32f(CvPoint2D32f)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: At global scope:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:957: error: redefinition of 'struct CvPoint3D32f'
+/usr/local/include/opencv2/core/types_c.h:1058: error: previous definition of 'struct CvPoint3D32f'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:963: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:963: error: conflicting declaration 'typedef int CvPoint3D32f'
+/usr/local/include/opencv2/core/types_c.h:1063: error: 'CvPoint3D32f' has a previous declaration as 'typedef struct CvPoint3D32f CvPoint3D32f'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvPoint3D32f cvPoint3D32f(double, double, double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:966: error: redefinition of 'CvPoint3D32f cvPoint3D32f(double, double, double)'
+/usr/local/include/opencv2/core/types_c.h:1066: error: 'CvPoint3D32f cvPoint3D32f(double, double, double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: At global scope:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:978: error: redefinition of 'struct CvPoint2D64f'
+/usr/local/include/opencv2/core/types_c.h:1079: error: previous definition of 'struct CvPoint2D64f'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:983: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:983: error: conflicting declaration 'typedef int CvPoint2D64f'
+/usr/local/include/opencv2/core/types_c.h:1083: error: 'CvPoint2D64f' has a previous declaration as 'typedef struct CvPoint2D64f CvPoint2D64f'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvPoint2D64f cvPoint2D64f(double, double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:986: error: redefinition of 'CvPoint2D64f cvPoint2D64f(double, double)'
+/usr/local/include/opencv2/core/types_c.h:1086: error: 'CvPoint2D64f cvPoint2D64f(double, double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: At global scope:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:997: error: redefinition of 'struct CvPoint3D64f'
+/usr/local/include/opencv2/core/types_c.h:1098: error: previous definition of 'struct CvPoint3D64f'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1003: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1003: error: conflicting declaration 'typedef int CvPoint3D64f'
+/usr/local/include/opencv2/core/types_c.h:1103: error: 'CvPoint3D64f' has a previous declaration as 'typedef struct CvPoint3D64f CvPoint3D64f'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvPoint3D64f cvPoint3D64f(double, double, double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1006: error: redefinition of 'CvPoint3D64f cvPoint3D64f(double, double, double)'
+/usr/local/include/opencv2/core/types_c.h:1106: error: 'CvPoint3D64f cvPoint3D64f(double, double, double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: At global scope:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1025: error: conflicting declaration 'typedef struct CvSize CvSize'
+/usr/local/include/opencv2/core/types_c.h:1125: error: 'CvSize' has a previous declaration as 'typedef struct CvSize CvSize'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvSize cvSize(int, int)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1027: error: redefinition of 'CvSize cvSize(int, int)'
+/usr/local/include/opencv2/core/types_c.h:1127: error: 'CvSize cvSize(int, int)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: At global scope:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1037: error: redefinition of 'struct CvSize2D32f'
+/usr/local/include/opencv2/core/types_c.h:1138: error: previous definition of 'struct CvSize2D32f'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1042: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1042: error: conflicting declaration 'typedef int CvSize2D32f'
+/usr/local/include/opencv2/core/types_c.h:1142: error: 'CvSize2D32f' has a previous declaration as 'typedef struct CvSize2D32f CvSize2D32f'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvSize2D32f cvSize2D32f(double, double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1045: error: redefinition of 'CvSize2D32f cvSize2D32f(double, double)'
+/usr/local/include/opencv2/core/types_c.h:1145: error: 'CvSize2D32f cvSize2D32f(double, double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: At global scope:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1055: error: redefinition of 'struct CvBox2D'
+/usr/local/include/opencv2/core/types_c.h:1156: error: previous definition of 'struct CvBox2D'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1062: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1062: error: conflicting declaration 'typedef int CvBox2D'
+/usr/local/include/opencv2/core/types_c.h:1162: error: 'CvBox2D' has a previous declaration as 'typedef struct CvBox2D CvBox2D'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1066: error: redefinition of 'struct CvLineIterator'
+/usr/local/include/opencv2/core/types_c.h:1167: error: previous definition of 'struct CvLineIterator'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1078: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1078: error: conflicting declaration 'typedef int CvLineIterator'
+/usr/local/include/opencv2/core/types_c.h:1178: error: 'CvLineIterator' has a previous declaration as 'typedef struct CvLineIterator CvLineIterator'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1084: error: redefinition of 'struct CvSlice'
+/usr/local/include/opencv2/core/types_c.h:1185: error: previous definition of 'struct CvSlice'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1088: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1088: error: conflicting declaration 'typedef int CvSlice'
+/usr/local/include/opencv2/core/types_c.h:1188: error: 'CvSlice' has a previous declaration as 'typedef struct CvSlice CvSlice'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvSlice cvSlice(int, int)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1090: error: redefinition of 'CvSlice cvSlice(int, int)'
+/usr/local/include/opencv2/core/types_c.h:1190: error: 'CvSlice cvSlice(int, int)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: At global scope:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1105: error: redefinition of 'struct CvScalar'
+/usr/local/include/opencv2/core/types_c.h:1206: error: previous definition of 'struct CvScalar'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1109: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1109: error: conflicting declaration 'typedef int CvScalar'
+/usr/local/include/opencv2/core/types_c.h:1209: error: 'CvScalar' has a previous declaration as 'typedef struct CvScalar CvScalar'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvScalar cvScalar(double, double, double, double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1112: error: redefinition of 'CvScalar cvScalar(double, double, double, double)'
+/usr/local/include/opencv2/core/types_c.h:1212: error: 'CvScalar cvScalar(double, double, double, double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvScalar cvRealScalar(double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1121: error: redefinition of 'CvScalar cvRealScalar(double)'
+/usr/local/include/opencv2/core/types_c.h:1221: error: 'CvScalar cvRealScalar(double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvScalar cvScalarAll(double)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1129: error: redefinition of 'CvScalar cvScalarAll(double)'
+/usr/local/include/opencv2/core/types_c.h:1229: error: 'CvScalar cvScalarAll(double)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: At global scope:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1145: error: redefinition of 'struct CvMemBlock'
+/usr/local/include/opencv2/core/types_c.h:1246: error: previous definition of 'struct CvMemBlock'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1150: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1150: error: conflicting declaration 'typedef int CvMemBlock'
+/usr/local/include/opencv2/core/types_c.h:1250: error: 'CvMemBlock' has a previous declaration as 'typedef struct CvMemBlock CvMemBlock'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1154: error: redefinition of 'struct CvMemStorage'
+/usr/local/include/opencv2/core/types_c.h:1255: error: previous definition of 'struct CvMemStorage'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1163: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1163: error: conflicting declaration 'typedef int CvMemStorage'
+/usr/local/include/opencv2/core/types_c.h:1263: error: 'CvMemStorage' has a previous declaration as 'typedef struct CvMemStorage CvMemStorage'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1170: error: redefinition of 'struct CvMemStoragePos'
+/usr/local/include/opencv2/core/types_c.h:1271: error: previous definition of 'struct CvMemStoragePos'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1175: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1175: error: conflicting declaration 'typedef int CvMemStoragePos'
+/usr/local/include/opencv2/core/types_c.h:1275: error: 'CvMemStoragePos' has a previous declaration as 'typedef struct CvMemStoragePos CvMemStoragePos'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1180: error: redefinition of 'struct CvSeqBlock'
+/usr/local/include/opencv2/core/types_c.h:1281: error: previous definition of 'struct CvSeqBlock'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1189: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1189: error: conflicting declaration 'typedef int CvSeqBlock'
+/usr/local/include/opencv2/core/types_c.h:1289: error: 'CvSeqBlock' has a previous declaration as 'typedef struct CvSeqBlock CvSeqBlock'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1215: error: redefinition of 'struct CvSeq'
+/usr/local/include/opencv2/core/types_c.h:1316: error: previous definition of 'struct CvSeq'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1219: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1219: error: conflicting declaration 'typedef int CvSeq'
+/usr/local/include/opencv2/core/types_c.h:1319: error: 'CvSeq' has a previous declaration as 'typedef struct CvSeq CvSeq'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1235: error: redefinition of 'struct CvSetElem'
+/usr/local/include/opencv2/core/types_c.h:1336: error: previous definition of 'struct CvSetElem'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1239: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1239: error: conflicting declaration 'typedef int CvSetElem'
+/usr/local/include/opencv2/core/types_c.h:1339: error: 'CvSetElem' has a previous declaration as 'typedef struct CvSetElem CvSetElem'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1246: error: redefinition of 'struct CvSet'
+/usr/local/include/opencv2/core/types_c.h:1347: error: previous definition of 'struct CvSet'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1250: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1250: error: conflicting declaration 'typedef int CvSet'
+/usr/local/include/opencv2/core/types_c.h:1350: error: 'CvSet' has a previous declaration as 'typedef struct CvSet CvSet'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1288: error: redefinition of 'struct CvGraphEdge'
+/usr/local/include/opencv2/core/types_c.h:1392: error: previous definition of 'struct CvGraphEdge'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1292: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1292: error: conflicting declaration 'typedef int CvGraphEdge'
+/usr/local/include/opencv2/core/types_c.h:1395: error: 'CvGraphEdge' has a previous declaration as 'typedef struct CvGraphEdge CvGraphEdge'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1294: error: redefinition of 'struct CvGraphVtx'
+/usr/local/include/opencv2/core/types_c.h:1398: error: previous definition of 'struct CvGraphVtx'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1298: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1298: error: conflicting declaration 'typedef int CvGraphVtx'
+/usr/local/include/opencv2/core/types_c.h:1401: error: 'CvGraphVtx' has a previous declaration as 'typedef struct CvGraphVtx CvGraphVtx'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1300: error: redefinition of 'struct CvGraphVtx2D'
+/usr/local/include/opencv2/core/types_c.h:1404: error: previous definition of 'struct CvGraphVtx2D'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1305: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1305: error: conflicting declaration 'typedef int CvGraphVtx2D'
+/usr/local/include/opencv2/core/types_c.h:1408: error: 'CvGraphVtx2D' has a previous declaration as 'typedef struct CvGraphVtx2D CvGraphVtx2D'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1315: error: redefinition of 'struct CvGraph'
+/usr/local/include/opencv2/core/types_c.h:1419: error: previous definition of 'struct CvGraph'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1319: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1319: error: conflicting declaration 'typedef int CvGraph'
+/usr/local/include/opencv2/core/types_c.h:1422: error: 'CvGraph' has a previous declaration as 'typedef struct CvGraph CvGraph'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1325: error: redefinition of 'struct CvChain'
+/usr/local/include/opencv2/core/types_c.h:1429: error: previous definition of 'struct CvChain'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1330: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1330: error: conflicting declaration 'typedef int CvChain'
+/usr/local/include/opencv2/core/types_c.h:1433: error: 'CvChain' has a previous declaration as 'typedef struct CvChain CvChain'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1338: error: redefinition of 'struct CvContour'
+/usr/local/include/opencv2/core/types_c.h:1442: error: previous definition of 'struct CvContour'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1342: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1342: error: conflicting declaration 'typedef int CvContour'
+/usr/local/include/opencv2/core/types_c.h:1445: error: 'CvContour' has a previous declaration as 'typedef struct CvContour CvContour'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1482: error: redefinition of 'struct CvSeqWriter'
+/usr/local/include/opencv2/core/types_c.h:1585: error: previous definition of 'struct CvSeqWriter'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1486: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1486: error: conflicting declaration 'typedef int CvSeqWriter'
+/usr/local/include/opencv2/core/types_c.h:1588: error: 'CvSeqWriter' has a previous declaration as 'typedef struct CvSeqWriter CvSeqWriter'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1500: error: redefinition of 'struct CvSeqReader'
+/usr/local/include/opencv2/core/types_c.h:1603: error: previous definition of 'struct CvSeqReader'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1504: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1504: error: conflicting declaration 'typedef int CvSeqReader'
+/usr/local/include/opencv2/core/types_c.h:1606: error: 'CvSeqReader' has a previous declaration as 'typedef struct CvSeqReader CvSeqReader'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1630: error: redefinition of 'struct CvAttrList'
+/usr/local/include/opencv2/core/types_c.h:1733: error: previous definition of 'struct CvAttrList'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1635: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1635: error: conflicting declaration 'typedef int CvAttrList'
+/usr/local/include/opencv2/core/types_c.h:1737: error: 'CvAttrList' has a previous declaration as 'typedef struct CvAttrList CvAttrList'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: In function 'CvAttrList cvAttrList(const char**, CvAttrList*)':
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1638: error: redefinition of 'CvAttrList cvAttrList(const char**, CvAttrList*)'
+/usr/local/include/opencv2/core/types_c.h:1740: error: 'CvAttrList cvAttrList(const char**, CvAttrList*)' previously defined here
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h: At global scope:
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1683: error: redefinition of 'struct CvString'
+/usr/local/include/opencv2/core/types_c.h:1786: error: previous definition of 'struct CvString'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1688: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1688: error: conflicting declaration 'typedef int CvString'
+/usr/local/include/opencv2/core/types_c.h:1790: error: 'CvString' has a previous declaration as 'typedef struct CvString CvString'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1692: error: redefinition of 'struct CvStringHashNode'
+/usr/local/include/opencv2/core/types_c.h:1795: error: previous definition of 'struct CvStringHashNode'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1698: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1698: error: conflicting declaration 'typedef int CvStringHashNode'
+/usr/local/include/opencv2/core/types_c.h:1800: error: 'CvStringHashNode' has a previous declaration as 'typedef struct CvStringHashNode CvStringHashNode'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1703: error: redefinition of 'struct CvFileNode'
+/usr/local/include/opencv2/core/types_c.h:1806: error: previous definition of 'struct CvFileNode'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1717: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1717: error: conflicting declaration 'typedef int CvFileNode'
+/usr/local/include/opencv2/core/types_c.h:1819: error: 'CvFileNode' has a previous declaration as 'typedef struct CvFileNode CvFileNode'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1732: error: redefinition of 'struct CvTypeInfo'
+/usr/local/include/opencv2/core/types_c.h:1835: error: previous definition of 'struct CvTypeInfo'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1745: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1745: error: conflicting declaration 'typedef int CvTypeInfo'
+/usr/local/include/opencv2/core/types_c.h:1847: error: 'CvTypeInfo' has a previous declaration as 'typedef struct CvTypeInfo CvTypeInfo'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1750: error: redefinition of 'struct CvPluginFuncInfo'
+/usr/local/include/opencv2/core/types_c.h:1853: error: previous definition of 'struct CvPluginFuncInfo'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1758: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1758: error: conflicting declaration 'typedef int CvPluginFuncInfo'
+/usr/local/include/opencv2/core/types_c.h:1860: error: 'CvPluginFuncInfo' has a previous declaration as 'typedef struct CvPluginFuncInfo CvPluginFuncInfo'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1760: error: redefinition of 'struct CvModuleInfo'
+/usr/local/include/opencv2/core/types_c.h:1863: error: previous definition of 'struct CvModuleInfo'
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1767: error: invalid type in declaration before ';' token
+/Library/Frameworks/opencv.framework/Headers/cxtypes.h:1767: error: conflicting declaration 'typedef int CvModuleInfo'
+/usr/local/include/opencv2/core/types_c.h:1869: error: 'CvModuleInfo' has a previous declaration as 'typedef struct CvModuleInfo CvModuleInfo'
+make: *** [src/tld/ForegroundDetector.o] Error 1
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project gnebehay ****
+
+make clean 
+rm -rf  ./src/tld/tracker/bb.o ./src/tld/tracker/bb_predict.o ./src/tld/tracker/fbtrack.o ./src/tld/tracker/lk.o ./src/tld/tracker/median.o  ./src/tld/Clustering.o ./src/tld/DetectionResult.o ./src/tld/DetectorCascade.o ./src/tld/EnsembleClassifier.o ./src/tld/ForegroundDetector.o ./src/tld/MedianFlowTracker.o ./src/tld/NNClassifier.o ./src/tld/TLD.o ./src/tld/TLDUtil.o ./src/tld/VarianceFilter.o  ./src/imacq/imAcq.o  ./src/Main.o ./src/config.o ./src/export.o ./src/gui.o ./src/settings.o  ./src/tld/tracker/bb.d ./src/tld/tracker/bb_predict.d ./src/tld/tracker/fbtrack.d ./src/tld/tracker/lk.d ./src/tld/tracker/median.d  ./src/tld/Clustering.d ./src/tld/DetectionResult.d ./src/tld/DetectorCascade.d ./src/tld/EnsembleClassifier.d ./src/tld/ForegroundDetector.d ./src/tld/MedianFlowTracker.d ./src/tld/NNClassifier.d ./src/tld/TLD.d ./src/tld/TLDUtil.d ./src/tld/VarianceFilter.d  ./src/imacq/imAcq.d  ./src/Main.d ./src/config.d ./src/export.d ./src/gui.d ./src/settings.d  gnebehay
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/tld/tracker/bb.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb.d" -MT"src/tld/tracker/bb.d" -o "src/tld/tracker/bb.o" "../src/tld/tracker/bb.cpp"
+Finished building: ../src/tld/tracker/bb.cpp
+ 
+Building file: ../src/tld/tracker/bb_predict.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb_predict.d" -MT"src/tld/tracker/bb_predict.d" -o "src/tld/tracker/bb_predict.o" "../src/tld/tracker/bb_predict.cpp"
+Finished building: ../src/tld/tracker/bb_predict.cpp
+ 
+Building file: ../src/tld/tracker/fbtrack.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/fbtrack.d" -MT"src/tld/tracker/fbtrack.d" -o "src/tld/tracker/fbtrack.o" "../src/tld/tracker/fbtrack.cpp"
+Finished building: ../src/tld/tracker/fbtrack.cpp
+ 
+Building file: ../src/tld/tracker/lk.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/lk.d" -MT"src/tld/tracker/lk.d" -o "src/tld/tracker/lk.o" "../src/tld/tracker/lk.cpp"
+Finished building: ../src/tld/tracker/lk.cpp
+ 
+Building file: ../src/tld/tracker/median.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/median.d" -MT"src/tld/tracker/median.d" -o "src/tld/tracker/median.o" "../src/tld/tracker/median.cpp"
+Finished building: ../src/tld/tracker/median.cpp
+ 
+Building file: ../src/tld/Clustering.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/Clustering.d" -MT"src/tld/Clustering.d" -o "src/tld/Clustering.o" "../src/tld/Clustering.cpp"
+Finished building: ../src/tld/Clustering.cpp
+ 
+Building file: ../src/tld/DetectionResult.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectionResult.d" -MT"src/tld/DetectionResult.d" -o "src/tld/DetectionResult.o" "../src/tld/DetectionResult.cpp"
+Finished building: ../src/tld/DetectionResult.cpp
+ 
+Building file: ../src/tld/DetectorCascade.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectorCascade.d" -MT"src/tld/DetectorCascade.d" -o "src/tld/DetectorCascade.o" "../src/tld/DetectorCascade.cpp"
+Finished building: ../src/tld/DetectorCascade.cpp
+ 
+Building file: ../src/tld/EnsembleClassifier.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/EnsembleClassifier.d" -MT"src/tld/EnsembleClassifier.d" -o "src/tld/EnsembleClassifier.o" "../src/tld/EnsembleClassifier.cpp"
+Finished building: ../src/tld/EnsembleClassifier.cpp
+ 
+Building file: ../src/tld/ForegroundDetector.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/ForegroundDetector.d" -MT"src/tld/ForegroundDetector.d" -o "src/tld/ForegroundDetector.o" "../src/tld/ForegroundDetector.cpp"
+../src/tld/ForegroundDetector.cpp:28:24: error: BlobResult.h: No such file or directory
+../src/tld/ForegroundDetector.cpp: In member function 'void tld::ForegroundDetector::nextIteration(cv::Mat)':
+../src/tld/ForegroundDetector.cpp:56: error: 'CBlobResult' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:56: error: expected `;' before 'blobs'
+../src/tld/ForegroundDetector.cpp:58: error: 'blobs' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_EXCLUDE' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'CBlobGetArea' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_LESS' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'CBlob' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'blob' was not declared in this scope
+make: *** [src/tld/ForegroundDetector.o] Error 1
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project gnebehay ****
+
+make clean 
+rm -rf  ./src/tld/tracker/bb.o ./src/tld/tracker/bb_predict.o ./src/tld/tracker/fbtrack.o ./src/tld/tracker/lk.o ./src/tld/tracker/median.o  ./src/tld/Clustering.o ./src/tld/DetectionResult.o ./src/tld/DetectorCascade.o ./src/tld/EnsembleClassifier.o ./src/tld/ForegroundDetector.o ./src/tld/MedianFlowTracker.o ./src/tld/NNClassifier.o ./src/tld/TLD.o ./src/tld/TLDUtil.o ./src/tld/VarianceFilter.o  ./src/imacq/imAcq.o  ./src/Main.o ./src/config.o ./src/cvaux.o ./src/cvblob.o ./src/cvcolor.o ./src/cvcontour.o ./src/cvlabel.o ./src/cvtrack.o ./src/export.o ./src/gui.o ./src/settings.o  ./src/tld/tracker/bb.d ./src/tld/tracker/bb_predict.d ./src/tld/tracker/fbtrack.d ./src/tld/tracker/lk.d ./src/tld/tracker/median.d  ./src/tld/Clustering.d ./src/tld/DetectionResult.d ./src/tld/DetectorCascade.d ./src/tld/EnsembleClassifier.d ./src/tld/ForegroundDetector.d ./src/tld/MedianFlowTracker.d ./src/tld/NNClassifier.d ./src/tld/TLD.d ./src/tld/TLDUtil.d ./src/tld/VarianceFilter.d  ./src/imacq/imAcq.d  ./src/Main.d ./src/config.d ./src/cvaux.d ./src/cvblob.d ./src/cvcolor.d ./src/cvcontour.d ./src/cvlabel.d ./src/cvtrack.d ./src/export.d ./src/gui.d ./src/settings.d  gnebehay
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/tld/tracker/bb.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb.d" -MT"src/tld/tracker/bb.d" -o "src/tld/tracker/bb.o" "../src/tld/tracker/bb.cpp"
+Finished building: ../src/tld/tracker/bb.cpp
+ 
+Building file: ../src/tld/tracker/bb_predict.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb_predict.d" -MT"src/tld/tracker/bb_predict.d" -o "src/tld/tracker/bb_predict.o" "../src/tld/tracker/bb_predict.cpp"
+Finished building: ../src/tld/tracker/bb_predict.cpp
+ 
+Building file: ../src/tld/tracker/fbtrack.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/fbtrack.d" -MT"src/tld/tracker/fbtrack.d" -o "src/tld/tracker/fbtrack.o" "../src/tld/tracker/fbtrack.cpp"
+Finished building: ../src/tld/tracker/fbtrack.cpp
+ 
+Building file: ../src/tld/tracker/lk.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/lk.d" -MT"src/tld/tracker/lk.d" -o "src/tld/tracker/lk.o" "../src/tld/tracker/lk.cpp"
+Finished building: ../src/tld/tracker/lk.cpp
+ 
+Building file: ../src/tld/tracker/median.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/median.d" -MT"src/tld/tracker/median.d" -o "src/tld/tracker/median.o" "../src/tld/tracker/median.cpp"
+Finished building: ../src/tld/tracker/median.cpp
+ 
+Building file: ../src/tld/Clustering.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/Clustering.d" -MT"src/tld/Clustering.d" -o "src/tld/Clustering.o" "../src/tld/Clustering.cpp"
+Finished building: ../src/tld/Clustering.cpp
+ 
+Building file: ../src/tld/DetectionResult.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectionResult.d" -MT"src/tld/DetectionResult.d" -o "src/tld/DetectionResult.o" "../src/tld/DetectionResult.cpp"
+Finished building: ../src/tld/DetectionResult.cpp
+ 
+Building file: ../src/tld/DetectorCascade.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectorCascade.d" -MT"src/tld/DetectorCascade.d" -o "src/tld/DetectorCascade.o" "../src/tld/DetectorCascade.cpp"
+Finished building: ../src/tld/DetectorCascade.cpp
+ 
+Building file: ../src/tld/EnsembleClassifier.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/EnsembleClassifier.d" -MT"src/tld/EnsembleClassifier.d" -o "src/tld/EnsembleClassifier.o" "../src/tld/EnsembleClassifier.cpp"
+Finished building: ../src/tld/EnsembleClassifier.cpp
+ 
+Building file: ../src/tld/ForegroundDetector.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/ForegroundDetector.d" -MT"src/tld/ForegroundDetector.d" -o "src/tld/ForegroundDetector.o" "../src/tld/ForegroundDetector.cpp"
+../src/tld/ForegroundDetector.cpp:28:24: error: BlobResult.h: No such file or directory
+../src/tld/ForegroundDetector.cpp: In member function 'void tld::ForegroundDetector::nextIteration(cv::Mat)':
+../src/tld/ForegroundDetector.cpp:56: error: 'CBlobResult' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:56: error: expected `;' before 'blobs'
+../src/tld/ForegroundDetector.cpp:58: error: 'blobs' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_EXCLUDE' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'CBlobGetArea' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_LESS' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'CBlob' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'blob' was not declared in this scope
+make: *** [src/tld/ForegroundDetector.o] Error 1
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project gnebehay ****
+
+make clean 
+rm -rf  ./src/tld/tracker/bb.o ./src/tld/tracker/bb_predict.o ./src/tld/tracker/fbtrack.o ./src/tld/tracker/lk.o ./src/tld/tracker/median.o  ./src/tld/Clustering.o ./src/tld/DetectionResult.o ./src/tld/DetectorCascade.o ./src/tld/EnsembleClassifier.o ./src/tld/ForegroundDetector.o ./src/tld/MedianFlowTracker.o ./src/tld/NNClassifier.o ./src/tld/TLD.o ./src/tld/TLDUtil.o ./src/tld/VarianceFilter.o  ./src/imacq/imAcq.o  ./src/Main.o ./src/config.o ./src/cvaux.o ./src/cvblob.o ./src/cvcolor.o ./src/cvcontour.o ./src/cvlabel.o ./src/cvtrack.o ./src/export.o ./src/gui.o ./src/settings.o  ./src/tld/tracker/bb.d ./src/tld/tracker/bb_predict.d ./src/tld/tracker/fbtrack.d ./src/tld/tracker/lk.d ./src/tld/tracker/median.d  ./src/tld/Clustering.d ./src/tld/DetectionResult.d ./src/tld/DetectorCascade.d ./src/tld/EnsembleClassifier.d ./src/tld/ForegroundDetector.d ./src/tld/MedianFlowTracker.d ./src/tld/NNClassifier.d ./src/tld/TLD.d ./src/tld/TLDUtil.d ./src/tld/VarianceFilter.d  ./src/imacq/imAcq.d  ./src/Main.d ./src/config.d ./src/cvaux.d ./src/cvblob.d ./src/cvcolor.d ./src/cvcontour.d ./src/cvlabel.d ./src/cvtrack.d ./src/export.d ./src/gui.d ./src/settings.d  gnebehay
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/tld/tracker/bb.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb.d" -MT"src/tld/tracker/bb.d" -o "src/tld/tracker/bb.o" "../src/tld/tracker/bb.cpp"
+Finished building: ../src/tld/tracker/bb.cpp
+ 
+Building file: ../src/tld/tracker/bb_predict.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb_predict.d" -MT"src/tld/tracker/bb_predict.d" -o "src/tld/tracker/bb_predict.o" "../src/tld/tracker/bb_predict.cpp"
+Finished building: ../src/tld/tracker/bb_predict.cpp
+ 
+Building file: ../src/tld/tracker/fbtrack.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/fbtrack.d" -MT"src/tld/tracker/fbtrack.d" -o "src/tld/tracker/fbtrack.o" "../src/tld/tracker/fbtrack.cpp"
+Finished building: ../src/tld/tracker/fbtrack.cpp
+ 
+Building file: ../src/tld/tracker/lk.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/lk.d" -MT"src/tld/tracker/lk.d" -o "src/tld/tracker/lk.o" "../src/tld/tracker/lk.cpp"
+Finished building: ../src/tld/tracker/lk.cpp
+ 
+Building file: ../src/tld/tracker/median.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/median.d" -MT"src/tld/tracker/median.d" -o "src/tld/tracker/median.o" "../src/tld/tracker/median.cpp"
+Finished building: ../src/tld/tracker/median.cpp
+ 
+Building file: ../src/tld/Clustering.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/Clustering.d" -MT"src/tld/Clustering.d" -o "src/tld/Clustering.o" "../src/tld/Clustering.cpp"
+Finished building: ../src/tld/Clustering.cpp
+ 
+Building file: ../src/tld/DetectionResult.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectionResult.d" -MT"src/tld/DetectionResult.d" -o "src/tld/DetectionResult.o" "../src/tld/DetectionResult.cpp"
+Finished building: ../src/tld/DetectionResult.cpp
+ 
+Building file: ../src/tld/DetectorCascade.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectorCascade.d" -MT"src/tld/DetectorCascade.d" -o "src/tld/DetectorCascade.o" "../src/tld/DetectorCascade.cpp"
+Finished building: ../src/tld/DetectorCascade.cpp
+ 
+Building file: ../src/tld/EnsembleClassifier.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/EnsembleClassifier.d" -MT"src/tld/EnsembleClassifier.d" -o "src/tld/EnsembleClassifier.o" "../src/tld/EnsembleClassifier.cpp"
+Finished building: ../src/tld/EnsembleClassifier.cpp
+ 
+Building file: ../src/tld/ForegroundDetector.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/ForegroundDetector.d" -MT"src/tld/ForegroundDetector.d" -o "src/tld/ForegroundDetector.o" "../src/tld/ForegroundDetector.cpp"
+../src/tld/ForegroundDetector.cpp:28:24: error: BlobResult.h: No such file or directory
+../src/tld/ForegroundDetector.cpp: In member function 'void tld::ForegroundDetector::nextIteration(cv::Mat)':
+../src/tld/ForegroundDetector.cpp:56: error: 'CBlobResult' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:56: error: expected `;' before 'blobs'
+../src/tld/ForegroundDetector.cpp:58: error: 'blobs' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_EXCLUDE' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'CBlobGetArea' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_LESS' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'CBlob' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'blob' was not declared in this scope
+make: *** [src/tld/ForegroundDetector.o] Error 1
+
+**** Build Finished ****

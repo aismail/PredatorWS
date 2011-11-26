@@ -1,0 +1,65 @@
+
+**** Build of configuration Debug for project gnebehay ****
+
+make all 
+Building file: ../src/tld/tracker/bb.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb.d" -MT"src/tld/tracker/bb.d" -o "src/tld/tracker/bb.o" "../src/tld/tracker/bb.cpp"
+Finished building: ../src/tld/tracker/bb.cpp
+ 
+Building file: ../src/tld/tracker/bb_predict.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/bb_predict.d" -MT"src/tld/tracker/bb_predict.d" -o "src/tld/tracker/bb_predict.o" "../src/tld/tracker/bb_predict.cpp"
+Finished building: ../src/tld/tracker/bb_predict.cpp
+ 
+Building file: ../src/tld/tracker/fbtrack.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/fbtrack.d" -MT"src/tld/tracker/fbtrack.d" -o "src/tld/tracker/fbtrack.o" "../src/tld/tracker/fbtrack.cpp"
+Finished building: ../src/tld/tracker/fbtrack.cpp
+ 
+Building file: ../src/tld/tracker/lk.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/lk.d" -MT"src/tld/tracker/lk.d" -o "src/tld/tracker/lk.o" "../src/tld/tracker/lk.cpp"
+Finished building: ../src/tld/tracker/lk.cpp
+ 
+Building file: ../src/tld/tracker/median.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/tracker/median.d" -MT"src/tld/tracker/median.d" -o "src/tld/tracker/median.o" "../src/tld/tracker/median.cpp"
+Finished building: ../src/tld/tracker/median.cpp
+ 
+Building file: ../src/tld/Clustering.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/Clustering.d" -MT"src/tld/Clustering.d" -o "src/tld/Clustering.o" "../src/tld/Clustering.cpp"
+Finished building: ../src/tld/Clustering.cpp
+ 
+Building file: ../src/tld/DetectionResult.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectionResult.d" -MT"src/tld/DetectionResult.d" -o "src/tld/DetectionResult.o" "../src/tld/DetectionResult.cpp"
+Finished building: ../src/tld/DetectionResult.cpp
+ 
+Building file: ../src/tld/DetectorCascade.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/DetectorCascade.d" -MT"src/tld/DetectorCascade.d" -o "src/tld/DetectorCascade.o" "../src/tld/DetectorCascade.cpp"
+Finished building: ../src/tld/DetectorCascade.cpp
+ 
+Building file: ../src/tld/EnsembleClassifier.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/EnsembleClassifier.d" -MT"src/tld/EnsembleClassifier.d" -o "src/tld/EnsembleClassifier.o" "../src/tld/EnsembleClassifier.cpp"
+Finished building: ../src/tld/EnsembleClassifier.cpp
+ 
+Building file: ../src/tld/ForegroundDetector.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I"/Users/andra/Documents/PredatorWS/gnebehay/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tld/ForegroundDetector.d" -MT"src/tld/ForegroundDetector.d" -o "src/tld/ForegroundDetector.o" "../src/tld/ForegroundDetector.cpp"
+../src/tld/ForegroundDetector.cpp:28:24: error: BlobResult.h: No such file or directory
+../src/tld/ForegroundDetector.cpp: In member function 'void tld::ForegroundDetector::nextIteration(cv::Mat)':
+../src/tld/ForegroundDetector.cpp:56: error: 'CBlobResult' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:56: error: expected `;' before 'blobs'
+../src/tld/ForegroundDetector.cpp:58: error: 'blobs' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_EXCLUDE' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'CBlobGetArea' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:58: error: 'B_LESS' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'CBlob' was not declared in this scope
+../src/tld/ForegroundDetector.cpp:63: error: 'blob' was not declared in this scope
+make: *** [src/tld/ForegroundDetector.o] Error 1
+
+**** Build Finished ****
