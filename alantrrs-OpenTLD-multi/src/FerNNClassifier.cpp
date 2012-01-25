@@ -21,6 +21,17 @@ void FerNNClassifier::read(const FileNode& file){
   thr_nn_valid = (float)file["thr_nn_valid"];
 }
 
+void FerNNClassifier::read(struct ferNNParams p){
+  ///Classifier Parameters
+  valid = p.valid;
+  ncc_thesame = p.ncc_thesame;
+  nstructs = p.nstructs;
+  structSize = p.structSize;
+  thr_fern = p.thr_fern;
+  thr_nn = p.thr_nn;
+  thr_nn_valid = p.thr_nn_valid;
+}
+
 void FerNNClassifier::prepare(const vector<Size>& scales){
   acum = 0;
   //Initialize test locations for features
@@ -131,7 +142,9 @@ void FerNNClassifier::trainNN(const vector<cv::Mat>& nn_examples){
 
   }                                                                 //  end
   acum++;
+#ifdef DEBUG
   printf("%d. Trained NN examples: %d positive %d negative\n",acum,(int)pEx.size(),(int)nEx.size());
+#endif
 }                                                                  //  end
 
 

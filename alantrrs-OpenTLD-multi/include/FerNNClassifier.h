@@ -7,8 +7,21 @@
 
 #include <opencv2/opencv.hpp>
 #include <stdio.h>
+
+struct ferNNParams {
+	float valid;
+	float ncc_thesame;
+	float nstructs;
+	float structSize;
+	float thr_fern;
+	float thr_nn;
+	float thr_nn_valid;
+};
+
 class FerNNClassifier{
 private:
+  //moved all to public
+public:
   float thr_fern;
   int structSize;
   int nstructs;
@@ -16,11 +29,11 @@ private:
   float ncc_thesame;
   float thr_nn;
   int acum;
-public:
   //Parameters
   float thr_nn_valid;
 
   void read(const cv::FileNode& file);
+  void read(struct ferNNParams p);
   void prepare(const std::vector<cv::Size>& scales);
   void getFeatures(const cv::Mat& image,const cv::Rect& box,const int& scale_idx,std::vector<int>& fern);
   void update(const std::vector<int>& fern, int C, int N);

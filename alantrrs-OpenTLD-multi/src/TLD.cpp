@@ -18,6 +18,31 @@ TLD::TLD(const FileNode& file){
   read(file);
 }
 
+void TLD::read(struct TLDParams p1, struct ferNNParams p2){
+  ///Bounding Box Parameters
+  min_win = p1.min_win;
+  ///Genarator Parameters
+  //initial parameters for positive examples
+  patch_size = p1.patch_size;
+  num_closest_init = p1.num_closest_init;
+  num_warps_init = p1.num_warps_init;
+  noise_init = p1.noise_init;
+  angle_init = p1.angle_init;
+  shift_init = p1.shift_init;
+  scale_init = p1.scale_init;
+  //update parameters for positive examples
+  num_closest_update = p1.num_closest_update;
+  num_warps_update = p1.num_warps_update;
+  noise_update = p1.noise_update;
+  angle_update = p1.angle_update;
+  shift_update = p1.shift_update;
+  scale_update = p1.scale_update;
+  //parameters for negative examples
+  bad_overlap = p1.bad_overlap;
+  bad_patches = p1.bad_patches;
+  classifier.read(p2);
+}
+
 void TLD::read(const FileNode& file){
   ///Bounding Box Parameters
   min_win = (int)file["min_win"];
@@ -47,7 +72,9 @@ void TLD::init(const Mat& frame1,const Rect& box,FILE* bb_file){
   //bb_file = fopen("bounding_boxes.txt","w");
   //Get Bounding Boxes
     buildGrid(frame1,box);
+#ifdef DEBUG
     printf("Created %d bounding boxes\n",(int)grid.size());
+#endif
   ///Preparation
   //allocation
   iisum.create(frame1.rows+1,frame1.cols+1,CV_32F);
@@ -66,9 +93,11 @@ void TLD::init(const Mat& frame1,const Rect& box,FILE* bb_file){
   //Init Generator
   generator = PatchGenerator (0,0,noise_init,true,1-scale_init,1+scale_init,-angle_init*CV_PI/180,angle_init*CV_PI/180,-angle_init*CV_PI/180,angle_init*CV_PI/180);
   getOverlappingBoxes(box,num_closest_init);
+#ifdef DEBUG
   printf("Found %d good boxes, %d bad boxes\n",(int)good_boxes.size(),(int)bad_boxes.size());
   printf("Best Box: %d %d %d %d\n",best_box.x,best_box.y,best_box.width,best_box.height);
   printf("Bounding box hull: %d %d %d %d\n",bbhull.x,bbhull.y,bbhull.width,bbhull.height);
+#endif
   //Correct Bounding Box
   lastbox=best_box;
   lastconf=1;
@@ -85,10 +114,14 @@ void TLD::init(const Mat& frame1,const Rect& box,FILE* bb_file){
   meanStdDev(frame1(best_box),mean,stdev);
   integral(frame1,iisum,iisqsum);
   var = pow(stdev.val[0],2)*0.5; //getVar(best_box,iisum,iisqsum);
+#ifdef DEBUG
   cout << "variance: " << var << endl;
+#endif
   //check variance
   double vr =  getVar(best_box,iisum,iisqsum)*0.5;
+#ifdef DEBUG
   cout << "check variance: " << vr << endl;
+#endif
   // Generate negative data
   generateNegativeData(frame1);
   //Split Negative Ferns into Training and Testing sets (they are already shuffled)
@@ -158,7 +191,9 @@ void TLD::generatePositiveData(const Mat& frame, int num_warps){
          pX.push_back(make_pair(fern,1));
      }
   }
+#ifdef DEBUG
   printf("Positive examples generated: ferns:%d NN:1\n",(int)pX.size());
+#endif
 }
 
 void TLD::getPattern(const Mat& img, Mat& pattern,Scalar& mean,Scalar& stdev){
@@ -183,7 +218,9 @@ void TLD::generateNegativeData(const Mat& frame){
   //Get Fern Features of the boxes with big variance (calculated using integral images)
   int a=0;
   int num = std::min((int)bad_boxes.size(),(int)bad_patches*100); //limits the size of bad_boxes to try
+#ifdef DEBUG
   printf("negative data generation started.\n");
+#endif
   vector<int> fern(classifier.getNumStructs());
   nX.reserve(num);
   for (int j=0;j<num;j++){
@@ -194,7 +231,9 @@ void TLD::generateNegativeData(const Mat& frame){
       nX.push_back(make_pair(fern,0));
       a++;
   }
+#ifdef DEBUG
   printf("Negative examples generated: ferns: %d ",a);
+#endif
   //random_shuffle(bad_boxes.begin(),bad_boxes.begin()+bad_patches);//Randomly selects 'bad_patches' and get the patterns for NN;
   Scalar dum1, dum2;
   nEx=vector<Mat>(bad_patches);
@@ -202,7 +241,9 @@ void TLD::generateNegativeData(const Mat& frame){
       idx=bad_boxes[i];
       getPattern(frame(grid[idx]),nEx[i],dum1,dum2);
   }
+#ifdef DEBUG
   printf("NN: %d\n",(int)nEx.size());
+#endif
 }
 
 double TLD::getVar(const BoundingBox& box,const Mat& sum,const Mat& sqsum){
@@ -238,10 +279,15 @@ void TLD::processFrame(const cv::Mat& img1,const cv::Mat& img2,vector<Point2f>& 
       bbnext=tbb;
       lastconf=tconf;
       lastvalid=tvalid;
+#ifdef DEBUG
       printf("Tracked\n");
+#endif
       if(detected){                                               //   if Detected
-          clusterConf(dbb,dconf,cbb,cconf);                       //   cluster detections
+          clusterConf(dbb,dconf,cbb,cconf); 
+                                //   cluster detections
+#ifdef DEBUG
           printf("Found %d clusters\n",(int)cbb.size());
+#endif
           for (int i=0;i<cbb.size();i++){
               if (bbOverlap(tbb,cbb[i])<0.5 && cconf[i]>tconf){  //  Get index of a clusters that is far from tracker and are more confident than the tracker
                   confident_detections++;
@@ -249,13 +295,17 @@ void TLD::processFrame(const cv::Mat& img1,const cv::Mat& img2,vector<Point2f>& 
               }
           }
           if (confident_detections==1){                                //if there is ONE such a cluster, re-initialize the tracker
+#ifdef DEBUG
               printf("Found a better match..reinitializing tracking\n");
+#endif
               bbnext=cbb[didx];
               lastconf=cconf[didx];
               lastvalid=false;
           }
           else {
+#ifdef DEBUG
               printf("%d confident cluster was found\n",confident_detections);
+#endif
               int cx=0,cy=0,cw=0,ch=0;
               int close_detections=0;
               for (int i=0;i<dbb.size();i++){
@@ -265,7 +315,9 @@ void TLD::processFrame(const cv::Mat& img1,const cv::Mat& img2,vector<Point2f>& 
                       cw += dbb[i].width;
                       ch += dbb[i].height;
                       close_detections++;
+#ifdef DEBUG
                       printf("weighted detection: %d %d %d %d\n",dbb[i].x,dbb[i].y,dbb[i].width,dbb[i].height);
+#endif
                   }
               }
               if (close_detections>0){
@@ -273,28 +325,37 @@ void TLD::processFrame(const cv::Mat& img1,const cv::Mat& img2,vector<Point2f>& 
                   bbnext.y = cvRound((float)(10*tbb.y+cy)/(float)(10+close_detections));
                   bbnext.width = cvRound((float)(10*tbb.width+cw)/(float)(10+close_detections));
                   bbnext.height =  cvRound((float)(10*tbb.height+ch)/(float)(10+close_detections));
+#ifdef DEBUG 
                   printf("Tracker bb: %d %d %d %d\n",tbb.x,tbb.y,tbb.width,tbb.height);
                   printf("Average bb: %d %d %d %d\n",bbnext.x,bbnext.y,bbnext.width,bbnext.height);
                   printf("Weighting %d close detection(s) with tracker..\n",close_detections);
+#endif
               }
               else{
+#ifdef DEBUG
                 printf("%d close detections were found\n",close_detections);
-
+#endif
               }
           }
       }
   }
   else{                                       //   If NOT tracking
+#ifdef DEBUG
       printf("Not tracking..\n");
+#endif
       lastboxfound = false;
       lastvalid = false;
       if(detected){                           //  and detector is defined
           clusterConf(dbb,dconf,cbb,cconf);   //  cluster detections
+#ifdef DEBUG
           printf("Found %d clusters\n",(int)cbb.size());
+#endif
           if (cconf.size()==1){
               bbnext=cbb[0];
               lastconf=cconf[0];
+#ifdef DEBUG 
               printf("Confident detection..reinitializing tracker\n");
+#endif
               lastboxfound = true;
           }
       }
@@ -318,7 +379,9 @@ void TLD::track(const Mat& img1, const Mat& img2,vector<Point2f>& points1,vector
   //Generate points
   bbPoints(points1,lastbox);
   if (points1.size()<1){
+#ifdef DEBUG
       printf("BB= %d %d %d %d, Points not generated\n",lastbox.x,lastbox.y,lastbox.width,lastbox.height);
+#endif
       tvalid=false;
       tracked=false;
       return;
@@ -332,7 +395,9 @@ void TLD::track(const Mat& img1, const Mat& img2,vector<Point2f>& points1,vector
       if (tracker.getFB()>10 || tbb.x>img2.cols ||  tbb.y>img2.rows || tbb.br().x < 1 || tbb.br().y <1){
           tvalid =false; //too unstable prediction or bounding box out of image
           tracked = false;
+#ifdef DEBUG
           printf("Too unstable predictions FB error=%f\n",tracker.getFB());
+#endif
           return;
       }
       //Estimate Confidence and Validity
@@ -352,9 +417,12 @@ void TLD::track(const Mat& img1, const Mat& img2,vector<Point2f>& points1,vector
           tvalid =true;
       }
   }
-  else
+  else {
+#ifdef DEBUG
     printf("No points tracked\n");
-
+#endif
+  	return;
+  }
 }
 
 void TLD::bbPoints(vector<cv::Point2f>& points,const BoundingBox& bb){
@@ -375,7 +443,9 @@ void TLD::bbPredict(const vector<cv::Point2f>& points1,const vector<cv::Point2f>
   int npoints = (int)points1.size();
   vector<float> xoff(npoints);
   vector<float> yoff(npoints);
+#ifdef DEBUG
   printf("tracked points : %d\n",npoints);
+#endif
   for (int i=0;i<npoints;i++){
       xoff[i]=points2[i].x-points1[i].x;
       yoff[i]=points2[i].y-points1[i].y;
@@ -398,12 +468,16 @@ void TLD::bbPredict(const vector<cv::Point2f>& points1,const vector<cv::Point2f>
   }
   float s1 = 0.5*(s-1)*bb1.width;
   float s2 = 0.5*(s-1)*bb1.height;
+#ifdef DEBUG
   printf("s= %f s1= %f s2= %f \n",s,s1,s2);
+#endif
   bb2.x = round( bb1.x + dx -s1);
   bb2.y = round( bb1.y + dy -s2);
   bb2.width = round(bb1.width*s);
   bb2.height = round(bb1.height*s);
+#ifdef DEBUG
   printf("predicted bb: %d %d %d %d\n",bb2.x,bb2.y,bb2.br().x,bb2.br().y);
+#endif
 }
 
 void TLD::detect(const cv::Mat& frame){
@@ -435,8 +509,10 @@ void TLD::detect(const cv::Mat& frame){
         tmp.conf[i]=0.0;
   }
   int detections = dt.bb.size();
+#ifdef DEBUG
   printf("%d Bounding boxes passed the variance filter\n",a);
   printf("%d Initial detection from Fern Classifier\n",detections);
+#endif
   if (detections>100){
       nth_element(dt.bb.begin(),dt.bb.begin()+100,dt.bb.end(),CComparator(tmp.conf));
       dt.bb.resize(100);
@@ -450,9 +526,13 @@ void TLD::detect(const cv::Mat& frame){
         detected=false;
         return;
       }
+#ifdef DEBUG
   printf("Fern detector made %d detections ",detections);
+#endif
   t=(double)getTickCount()-t;
+#ifdef DEBUG
   printf("in %gms\n", t*1000/getTickFrequency());
+#endif
                                                                        //  Initialize detection structure
   dt.patt = vector<vector<int> >(detections,vector<int>(10,0));        //  Corresponding codes of the Ensemble Classifier
   dt.conf1 = vector<float>(detections);                                //  Relative Similarity (for final nearest neighbour classifier)
@@ -474,11 +554,15 @@ void TLD::detect(const cv::Mat& frame){
       }
   }                                                                         //  end
   if (dbb.size()>0){
+#ifdef DEBUG
       printf("Found %d NN matches\n",(int)dbb.size());
+#endif
       detected=true;
   }
   else{
+#ifdef DEBUG
       printf("No NN matches found.\n");
+#endif
       detected=false;
   }
 }
@@ -487,7 +571,9 @@ void TLD::evaluate(){
 }
 
 void TLD::learn(const Mat& img){
+#ifdef DEBUG
   printf("[Learning] ");
+#endif
   ///Check consistency
   BoundingBox bb;
   bb.x = max(lastbox.x,0);
@@ -501,17 +587,23 @@ void TLD::learn(const Mat& img){
   float dummy, conf;
   classifier.NNConf(pattern,isin,conf,dummy);
   if (conf<0.5) {
+#ifdef DEBUG
       printf("Fast change..not training\n");
+#endif
       lastvalid =false;
       return;
   }
   if (pow(stdev.val[0],2)<var){
+#ifdef DEBUG
       printf("Low variance..not training\n");
+#endif
       lastvalid=false;
       return;
   }
   if(isin[2]==1){
+#ifdef DEBUG
       printf("Patch in negative data..not traing");
+#endif
       lastvalid=false;
       return;
   }
@@ -527,7 +619,9 @@ void TLD::learn(const Mat& img){
     generatePositiveData(img,num_warps_update);
   else{
     lastvalid = false;
+#ifdef DEBUG
     printf("No good boxes..Not training");
+#endif
     return;
   }
   fern_examples.reserve(pX.size()+bad_boxes.size());
@@ -739,14 +833,18 @@ void TLD::clusterConf(const vector<BoundingBox>& dbb,const vector<float>& dconf,
   }
   cconf=vector<float>(c);
   cbb=vector<BoundingBox>(c);
+#ifdef DEBUG
   printf("Cluster indexes: ");
+#endif
   BoundingBox bx;
   for (int i=0;i<c;i++){
       float cnf=0;
       int N=0,mx=0,my=0,mw=0,mh=0;
       for (int j=0;j<T.size();j++){
           if (T[j]==i){
+#ifdef DEBUG
               printf("%d ",i);
+#endif
               cnf=cnf+dconf[j];
               mx=mx+dbb[j].x;
               my=my+dbb[j].y;
@@ -764,6 +862,8 @@ void TLD::clusterConf(const vector<BoundingBox>& dbb,const vector<float>& dconf,
           cbb[i]=bx;
       }
   }
+#ifdef DEBUG
   printf("\n");
+#endif
 }
 

@@ -4,6 +4,29 @@
 #include <FerNNClassifier.h>
 #include <fstream>
 
+struct TLDParams {
+  ///Bounding Box Parameters
+  int min_win;
+  ///Genarator Parameters
+  //initial parameters for positive examples
+  int patch_size;
+  int num_closest_init;
+  int num_warps_init;
+  int noise_init;
+  float angle_init;
+  float shift_init;
+  float scale_init;
+  //update parameters for positive examples
+  int num_closest_update;
+  int num_warps_update;
+  int noise_update;
+  float angle_update;
+  float shift_update;
+  float scale_update;
+  //parameters for negative examples
+  float bad_overlap;
+  int bad_patches;
+};
 
 //Bounding Boxes
 struct BoundingBox : public cv::Rect {
@@ -47,6 +70,9 @@ struct CComparator{
 
 class TLD{
 private:
+  //moved to public
+
+public:
   cv::PatchGenerator generator;
   FerNNClassifier classifier;
   LKTracker tracker;
@@ -110,12 +136,12 @@ private:
   std::vector<int> bad_boxes; //indexes of bboxes with overlap < 0.2
   BoundingBox bbhull; // hull of good_boxes
   BoundingBox best_box; // maximum overlapping bbox
-
-public:
+  
   //Constructors
   TLD();
   TLD(const cv::FileNode& file);
   void read(const cv::FileNode& file);
+  void read(struct TLDParams p1, struct ferNNParams p2);
   //Methods
   void init(const cv::Mat& frame1,const cv::Rect &box, FILE* bb_file);
   void generatePositiveData(const cv::Mat& frame, int num_warps);

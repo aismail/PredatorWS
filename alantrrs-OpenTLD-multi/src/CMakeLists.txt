@@ -22,6 +22,10 @@ add_library(LKTracker LKTracker.cpp)
 add_library(ferNN FerNNClassifier.cpp)
 add_library(tld TLD.cpp)
 #executables
+add_executable(server selectserver.cpp)
+add_executable(client client.cpp)
 add_executable(run_tld run_tld.cpp)
 #link the libraries
 target_link_libraries(run_tld tld LKTracker ferNN tld_utils ${OpenCV_LIBS})
+target_link_libraries(server tld LKTracker ferNN tld_utils ${OpenCV_LIBS})
+target_link_libraries(client tld LKTracker ferNN tld_utils ${OpenCV_LIBS})
