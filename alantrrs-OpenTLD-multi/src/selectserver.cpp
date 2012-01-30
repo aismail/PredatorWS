@@ -16,16 +16,15 @@
 #define YES	"Yes"
 #define NO	"No"
 #define SERVER_BANNER	"Hi! Ask me a question and I'll say Yes or No"
-#define MAX_CLIENTS	5
-#define PORT 8889
+#define MAX_CLIENTS	10
+#define PORT 8888
 #define BUFFSIZ 4096
+#define CHUNK_SIZE 1024
 
 using namespace cv;
 using namespace std;
 
 //Global variables
-Rect box;
-Rect box2;
 bool hasFirstBox = false, hasSecondBox = false;
 bool drawing_box = false;
 bool gotBB = false;
@@ -65,7 +64,7 @@ void wait_reply(int sockfd)
 void send_box(int sockfd, bool status, Rect box)
 {
 	int n;
-	char* buffer = (char *) malloc (sizeof(char) * 1024);
+	char* buffer = (char *) malloc (sizeof(char) * CHUNK_SIZE);
 	sprintf(buffer, "%d:%d:%d:%d:%d", (status ? 1 : 0), box.x, box.y, box.width, box.height);
 	buffer[strlen(buffer)] = 0;
 	n = send(sockfd, buffer, strlen(buffer) + 1, 0);
@@ -79,7 +78,7 @@ void send_box(int sockfd, bool status, Rect box)
 
 Mat receive_mat(int i)
 {
-	int n, j = 0, to_recv = 10000;
+	int n, j = 0, to_recv = BUFFSIZ;
 	int rows, cols, elem_size, elem_type, step, dimension;
 	Mat mat;
 	char* buffer = (char *) malloc (sizeof(char) * BUFFSIZ);
@@ -103,8 +102,8 @@ Mat receive_mat(int i)
 	step = atoi(pch);
 	pch = strtok (NULL, ":");
 	dimension = atoi(pch);
-	int no_chunks = ceil(dimension / 1024);
-	to_recv = 1024;
+	int no_chunks = ceil(dimension / CHUNK_SIZE);
+	to_recv = CHUNK_SIZE;
 	uchar * matr = (uchar *) malloc (dimension);
 	while(1)
 	{
@@ -115,7 +114,7 @@ Mat receive_mat(int i)
 		send_reply(i);
 		
 		n = recv(i, buffer, to_recv, 0);
-		memcpy(matr + (j * 1024), buffer, to_recv);
+		memcpy(matr + (j * CHUNK_SIZE), buffer, to_recv);
 		send_reply(i);
 		
 		j++;
@@ -127,9 +126,10 @@ Mat receive_mat(int i)
 
 Rect receive_box(int i)
 {
-	int n, to_recv = 1024, box_x, box_y, box_width, box_height;
+	int n, to_recv = CHUNK_SIZE, box_x, box_y, box_width, box_height;
 	char* buffer = (char *) malloc (sizeof(char) * BUFFSIZ);
 	char* pch;
+	Rect box;
 	
 	n = recv(i, buffer, to_recv, 0);
 	pch = strtok (buffer,":");
@@ -149,7 +149,7 @@ Rect receive_box(int i)
 void receive_tld_params(int i, char *buffer, struct TLDParams &p1, struct ferNNParams &p2)
 {
 	char* pch;
-	int n, to_recv = 4096;
+	int n, to_recv = BUFFSIZ;
 	
 	/**Get FerNNClassifier struct information**/
 #ifdef DEBUG
@@ -199,11 +199,28 @@ void receive_tld_params(int i, char *buffer, struct TLDParams &p1, struct ferNNP
 	send_reply(i);
 }
 
+Rect box[MAX_CLIENTS], box2[MAX_CLIENTS];
+//TLD framework
+TLD tld[MAX_CLIENTS], tld2[MAX_CLIENTS];
+Mat last_gray[MAX_CLIENTS], last_gray2[MAX_CLIENTS];
+Mat frame[MAX_CLIENTS];
+struct TLDParams p1[MAX_CLIENTS];
+struct ferNNParams p2[MAX_CLIENTS];
+
+Mat current_gray[MAX_CLIENTS], current_gray2[MAX_CLIENTS];
+BoundingBox pbox[MAX_CLIENTS], pbox2[MAX_CLIENTS];
+vector<Point2f> pts1[MAX_CLIENTS], pts12[MAX_CLIENTS];
+vector<Point2f> pts2[MAX_CLIENTS], pts22[MAX_CLIENTS];
+bool status[MAX_CLIENTS], status2[MAX_CLIENTS];
+int frames = 1;
+int detections = 1, detections2 = 1;
+
+
 int main(int argc, char *argv[])
 {
 	int sockfd, newsockfd, portno;
 	socklen_t clilen;
-	int to_recv = 10000;
+	int to_recv = BUFSIZ;
 	char *buffer = (char *) malloc (sizeof(char) * BUFFSIZ);
 	struct sockaddr_in serv_addr, cli_addr;
 	int n, i, j;
@@ -235,6 +252,17 @@ int main(int argc, char *argv[])
 	//adaugam noul file descriptor in multimea read_fds
 	FD_SET(sockfd, &read_fds);
 	fdmax = sockfd;
+	
+	
+	//Output file
+	FILE  *bb_file = fopen("bounding_boxes.txt","w");
+	FILE  *bb_file2 = fopen("bounding_boxes2.txt","w");
+	
+	for(i = 0; i < MAX_CLIENTS; i++)
+	{
+		status[i] = true;
+		status2[i] = true;
+	}
 
 	// main loop
 	for(;;) 
@@ -292,71 +320,80 @@ int main(int argc, char *argv[])
 					} 
 					else 
 					{
-
-						Rect box;
-						//TLD framework
-						TLD tld, tld2;
-						Mat last_gray;
-						Mat frame;
-						struct TLDParams p1;
-						struct ferNNParams p2;
-						
-						receive_tld_params(i, buffer, p1, p2);
-						
-						//Read parameters file
-						tld.read(p1, p2);
-						//tld2.read(p1, p2);
-						
-						/**Get Bounding Box information**/
-						box = receive_box(i);
-						
-						/**Get last_gray Mat information**/
-						last_gray = receive_mat(i);//Mat(rows, cols, elem_type, matr, step);
-#ifdef DEBUG_MAT
-						printf("%s\n", last_gray.ptr());
-#endif
-						
-						//Output file
-						FILE  *bb_file = fopen("bounding_boxes.txt","w");
-						//FILE  *bb_file2 = fopen("bounding_boxes2.txt","w");
-						//TLD initialization
-						tld.init(last_gray, box, bb_file);
-						//tld2.init(last_gray2,box2,bb_file2);
-						
-						Mat current_gray, current_gray2;
-						BoundingBox pbox, pbox2;
-						vector<Point2f> pts1, pts12;
-						vector<Point2f> pts2, pts22;
-						bool status=true, status2=true;
-						int frames = 1;
-						int detections = 1, detections2 = 1;
-						
-						
-						while(1)
+						if(strcmp(buffer, "0") == 0)
 						{
-							frame = receive_mat(i);
-							if(frame.empty()) break;
-							//get frame
-							cvtColor(frame, current_gray, CV_RGB2GRAY);
-							//cvtColor(frame, current_gray2, CV_RGB2GRAY);
-							//Process Frame
-							tld.processFrame(last_gray,current_gray,pts1,pts2,pbox,status,tl,bb_file);
-#ifdef DEBUG							
-							printf("%d %d %d %d\n", pbox.x, pbox.y, pbox.width, pbox.height);
+							send_reply(i);	
+							
+							n = recv(i, buffer, to_recv, 0);
+							receive_tld_params(i, buffer, p1[i], p2[i]);
+							//Read parameters file
+							tld[i].read(p1[i], p2[i]);
+							tld2[i].read(p1[i], p2[i]);
+						}
+						else if(strcmp(buffer, "1") == 0)
+						{
+							send_reply(i);
+							/**Get Bounding Box information**/
+							box[i] = receive_box(i);
+							box2[i] = receive_box(i);
+							send_reply(i);
+						}
+						else if(strcmp(buffer, "2") == 0)
+						{
+							send_reply(i);
+							
+							/**Get last_gray Mat information**/
+							last_gray[i] = receive_mat(i);//Mat(rows, cols, elem_type, matr, step);
+							last_gray2[i] = receive_mat(i);
+							
+#ifdef DEBUG_MAT
+							printf("%s\n", last_gray[i].ptr());
 #endif
-							//tld2.processFrame(last_gray2,current_gray2,pts12,pts22,pbox2,status2,tl,bb_file2);
+							//TLD initialization
+							tld[i].init(last_gray[i], box[i], bb_file);
+							tld2[i].init(last_gray2[i], box2[i], bb_file2);
+							
+							send_reply(i);
+						}
+						else if(strcmp(buffer, "3") == 0)
+						{
+							send_reply(i);
+							
+							frame[i] = receive_mat(i);
+							if(frame[i].empty()) break;
+							//get frame
+							cvtColor(frame[i], current_gray[i], CV_RGB2GRAY);
+							cvtColor(frame[i], current_gray2[i], CV_RGB2GRAY);
+							//Process Frame
+							tld[i].processFrame(last_gray[i],current_gray[i],pts1[i],pts2[i],pbox[i],status[i],tl,bb_file);
+#ifdef DEBUG							
+							printf("%d %d %d %d %d\n", pbox.x, pbox.y, pbox.width, pbox.height, status);
+							printf("%d %d %d %d %d\n", pbox2.x, pbox2.y, pbox2.width, pbox2.height, status2);
+#endif
+							tld2[i].processFrame(last_gray2[i],current_gray2[i],pts12[i],pts22[i],pbox2[i],status2[i],tl,bb_file2);
+							
+							printf("%d %d %d %d %d\n", pbox[i].x, pbox[i].y, pbox[i].width, pbox[i].height, status[i]);
+							printf("%d %d %d %d %d\n", pbox2[i].x, pbox2[i].y, pbox2[i].width, pbox2[i].height, status2[i]);	
 						
-							//de trimis client-ului pbox x, y, width, height
-							send_box(i, status, pbox);
+							//Send result boxes
+							send_box(i, status[i], pbox[i]);
+							send_box(i, status2[i], pbox2[i]);
 						
 							//swap points and images
-							swap(last_gray,current_gray);
-							pts1.clear();
-							pts2.clear();
-							//swap(last_gray2,current_gray2);
-							//pts12.clear();
-							//pts22.clear();
-							imshow("TLD", frame);
+							swap(last_gray[i],current_gray[i]);
+							pts1[i].clear();
+							pts2[i].clear();
+							swap(last_gray2[i],current_gray2[i]);
+							pts12[i].clear();
+							pts22[i].clear();
+							imshow("TLD", frame[i]);
+							//send_reply(i);
+							
+						}
+						if(strcmp(buffer, "4") == 0)
+						{
+							close(i); 
+							FD_CLR(i, &read_fds);
 						}
 					}
 				} 

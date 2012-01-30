@@ -16,7 +16,7 @@
 #define YES	"Yes"
 #define NO	"No"
 #define HOSTNAME "localhost"
-#define PORT 8889
+#define PORT 8888
 #define BUFFSIZ 4096
 
 using namespace cv;
@@ -31,6 +31,7 @@ bool gotBB = false;
 bool tl = false;
 bool rep = false;
 bool fromfile=false;
+int bbn = 1;
 string video;
 
 void readBB(char* file)
@@ -112,7 +113,7 @@ void print_help(char** argv)
 void read_options(int argc, char** argv,VideoCapture& capture,FileStorage &fs)
 {
 	for (int i=0;i<argc;i++)
-		{
+	{
 		if (strcmp(argv[i],"-b")==0)
 		{
 			if (argc>i)
@@ -150,6 +151,10 @@ void read_options(int argc, char** argv,VideoCapture& capture,FileStorage &fs)
 		if (strcmp(argv[i],"-r")==0)
 		{
 			rep = true;
+		}
+		if (strcmp(argv[i], "-bb")==0)
+		{
+			bbn = atoi(argv[i + 1]);
 		}
 	}
 }
@@ -320,6 +325,18 @@ void receive_bbox(int sockfd, bool &status, BoundingBox &box)
 	free(buffer);
 }
 
+void send_label(int sockfd, int label)
+{
+	int n;
+	char *buffer = (char*) malloc(sizeof(char) * 256);
+	sprintf(buffer, "%d", label);
+	n = send(sockfd, buffer, strlen(buffer) + 1, 0);
+	if (n < 0) 
+		error("ERROR writing to socket");
+	wait_reply(sockfd);
+	free(buffer);
+}
+
 int opentld_run(int argc, char * argv[])
 {
 	/**Start Init Sockets**/
@@ -442,13 +459,20 @@ GETBOUNDINGBOX:
 	printf("Initial Bounding Box = x:%d y:%d w:%d h:%d\n",box2.x,box2.y,box2.width,box2.height);
 #endif
 	/**Sart Send fs**/
+	send_label(sockfd, 0);
 	send_fs(sockfd, fs.getFirstTopLevelNode());
 	
 	/**Start Send Param**/
+	send_label(sockfd, 1);
 	send_box(sockfd, box);
-	
+	send_box(sockfd, box2);
+	wait_reply(sockfd);
+		
 	/**Last Gray**/
+	send_label(sockfd, 2);
 	send_mat(sockfd, last_gray, "last_gray");
+	send_mat(sockfd, last_gray2, "last_gray2");
+	wait_reply(sockfd);
 #ifdef DEBUG_MAT
 	printf("%s\n", last_gray.ptr());
 #endif
@@ -473,17 +497,10 @@ GETBOUNDINGBOX:
 REPEAT:
 	while(capture.read(frame))
 	{
+		send_label(sockfd, 3);
 		send_mat(sockfd, frame, "frame");
 		receive_bbox(sockfd, status, pbox);
-		//pe server
-		//get frame
-		//cvtColor(frame, current_gray, CV_RGB2GRAY);
-		//cvtColor(frame, current_gray2, CV_RGB2GRAY);
-		//Process Frame
-		//tld.processFrame(last_gray,current_gray,pts1,pts2,pbox,status,tl,bb_file);
-		//tld2.processFrame(last_gray2,current_gray2,pts12,pts22,pbox2,status2,tl,bb_file2);
-		//stop pe server
-		
+		receive_bbox(sockfd, status2, pbox2);
 		//Draw Points
 		if (status)
 		{
@@ -492,35 +509,27 @@ REPEAT:
 			drawBox(frame,pbox);
 			detections++;
 		}
-		/*if (status2)
+		if (status2)
 		{
 			//drawPoints(frame,pts12);
 			//drawPoints(frame,pts22,Scalar(0,255,0));
 			drawBox(frame,pbox2);
 			detections2++;
-		}*/
-		//Display
-		//    imshow("TLD", frame);
-		//swap points and images
-		//start pe server
-		//swap(last_gray,current_gray);
-		//pts1.clear();
-		//pts2.clear();
-		//swap(last_gray2,current_gray2);
-		//pts12.clear();
-		//pts22.clear();
-		//stop pe server
+		}
 		frames++;
 #ifdef DEBUG
 		printf("Detection rate: %d/%d\n",detections,frames);
 		printf("Detection2 rate: %d/%d\n",detections2,frames);
 #endif
-		if (cvWaitKey(33) == 'q')
+		if (cvWaitKey(33) == 'q') {
+			send_label(sockfd, 4);
 			break;
+		}
 #ifdef DEBUG	
 		printf("---------------------------------------------------------\n");
 #endif
 		imshow("TLD", frame);
+		//wait_reply(sockfd);
 	}
 	if (rep)
 	{
