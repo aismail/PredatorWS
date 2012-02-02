@@ -252,7 +252,7 @@ void send_mat(int sockfd, const Mat& m, const char* label)
 	size_t elem_type = m.type();
 	size_t dimension = (m.rows*m.cols*elem_size);
 	buffer = (char *) malloc (sizeof(char) * dimension * 512);
-	sprintf(buffer, "%d:%d:%d:%d:%d:%d", m.rows, m.cols, elem_size, elem_type, m.step1(), dimension);
+	sprintf(buffer, "%d:%d:%d:%d:%d:%d", (int)m.rows, (int)m.cols, (int)elem_size, (int)elem_type, (int)m.step1(), (int)dimension);
 	buffer[strlen(buffer)] = 0;
 	n = send(sockfd, buffer, strlen(buffer) + 1, 0);
 	if (n < 0) 
