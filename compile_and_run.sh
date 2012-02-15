@@ -1,6 +1,7 @@
 #?/bin/bash
+mkdir build
+cd build
 cmake ../src
-cd ../build
 make
 cd ../bin
 ./run_tld -p ../parameters.yml -tl
