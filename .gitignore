@@ -1,5 +1,5 @@
-alantrrs-OpenTLD-multi/bin/
-alantrrs-OpenTLD-multi/build/
+bin/
+build/
 *.a
 .metadata
 .project
