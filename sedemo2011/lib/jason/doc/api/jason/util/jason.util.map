@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="c4895" href="./asl2xml.html" title="jason.util.asl2xml" alt="" coords="153,22,244,53"/>
-<area shape="rect" id="c4896" href="./asl2tex.html" title="jason.util.asl2tex" alt="" coords="16,126,104,157"/>
-<area shape="rect" id="c4897" href="./asl2html.html" title="jason.util.asl2html" alt="" coords="149,126,249,157"/>
-<area shape="rect" id="c4898" href="./asl2dot.html" title="jason.util.asl2dot" alt="" coords="293,126,384,157"/>
-<area shape="rect" id="c4899" href="./ToDOM.html" title="jason.util.ToDOM" alt="" coords="289,11,417,63"/>
-</map>

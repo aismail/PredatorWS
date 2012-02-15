@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="c7633" href="./InternalAction.html" title="jason.asSemantics.InternalAction" alt="" coords="315,131,469,183"/>
-<area shape="rect" id="c7640" href="./DefaultInternalAction.html" title="jason.asSemantics.DefaultInternalAction" alt="" coords="15,253,235,283"/>
-<area shape="rect" id="c7642" href="./ConcurrentInternalAction.html" title="jason.asSemantics.ConcurrentInternalAction" alt="" coords="280,253,504,283"/>
-<area shape="rect" id="c7816" href="../stdlib/print.html" title="jason.stdlib.print" alt="" coords="549,246,635,290"/>
-<area shape="rect" id="c7679" href="../asSyntax/InternalActionLiteral.html" title="jason.asSyntax.InternalActionLiteral" alt="" coords="286,11,498,55"/>
-</map>

@@ -1,8 +1,0 @@
-/* Jason Project */
-
-MAS <PROJECT_NAME> {
-
-    infrastructure: <INFRA>
-
-    agents:
-}

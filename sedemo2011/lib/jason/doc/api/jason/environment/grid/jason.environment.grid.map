@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="c2300" href="./Location.html" title="jason.environment.grid.Location" alt="" coords="16,14,120,45"/>
-<area shape="rect" id="c2301" href="./GridWorldView.html" title="jason.environment.grid.GridWorldView" alt="" coords="165,14,326,45"/>
-<area shape="rect" id="c2302" href="./GridWorldModel.html" title="jason.environment.grid.GridWorldModel" alt="" coords="371,14,544,45"/>
-<area shape="rect" id="c2303" href="./Area.html" title="jason.environment.grid.Area" alt="" coords="589,14,654,45"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="c17957" href="./VarTerm.html" title="jason.asSyntax.VarTerm" alt="" coords="79,211,182,242"/>
-<area shape="rect" id="c17967" href="./Rule.html" title="jason.asSyntax.Rule" alt="" coords="226,211,289,242"/>
-<area shape="rect" id="c17981" href="./LogicalFormula.html" title="jason.asSyntax.LogicalFormula" alt="" coords="16,321,181,373"/>
-<area shape="rect" id="c17971" href="./Pred.html" title="jason.asSyntax.Pred" alt="" coords="98,14,163,45"/>
-<area shape="rect" id="c17984" href="./LiteralImpl.html" title="jason.asSyntax.LiteralImpl" alt="" coords="71,113,191,143"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="c2050" href="./TimeSteppedEnvironment.html" title="jason.environment.TimeSteppedEnvironment" alt="" coords="16,198,277,229"/>
-<area shape="rect" id="c2052" href="./SteppedEnvironment.html" title="jason.environment.SteppedEnvironment" alt="" coords="39,294,254,325"/>
-<area shape="rect" id="c2051" href="./TimeSteppedEnvironment.OverActionsPolicy.html" title="jason.environment.TimeSteppedEnvironment.OverActionsPolicy" alt="" coords="261,11,451,135"/>
-<area shape="rect" id="c2053" href="./EnvironmentInfraTier.html" title="jason.environment.EnvironmentInfraTier" alt="" coords="496,47,715,99"/>
-<area shape="rect" id="c2054" href="./Environment.html" title="jason.environment.Environment" alt="" coords="77,58,216,89"/>
-</map>

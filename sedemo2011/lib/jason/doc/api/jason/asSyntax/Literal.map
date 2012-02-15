@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="c18204" href="./Trigger.html" title="jason.asSyntax.Trigger" alt="" coords="15,22,107,53"/>
-<area shape="rect" id="c18230" href="./Literal.html" title="jason.asSyntax.Literal" alt="" coords="199,142,271,173"/>
-<area shape="rect" id="c18215" href="./PredicateIndicator.html" title="jason.asSyntax.PredicateIndicator" alt="" coords="48,254,243,285"/>
-<area shape="rect" id="c18226" href="./LogicalFormula.html" title="jason.asSyntax.LogicalFormula" alt="" coords="152,11,317,63"/>
-<area shape="rect" id="c18238" href="./Atom.html" title="jason.asSyntax.Atom" alt="" coords="287,254,361,285"/>
-<area shape="rect" id="c18234" href="./DefaultTerm.html" title="jason.asSyntax.DefaultTerm" alt="" coords="363,22,483,53"/>
-</map>
